@@ -1,0 +1,270 @@
+# Prometheus Alert Rules for JuraGPT Auditor
+# Defines alerts for service health, performance, and quality issues
+
+groups:
+  # ==============================================================================
+  # Service Availability Alerts
+  # ==============================================================================
+  - name: auditor_availability
+    interval: 30s
+    rules:
+      - alert: AuditorServiceDown
+        expr: up{job="auditor-api"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: api
+        annotations:
+          summary: "Auditor API is down"
+          description: "The Auditor API service has been unavailable for more than 1 minute. Instance: {{ $labels.instance }}"
+          action: "Check container logs: docker-compose logs auditor-api"
+
+      - alert: PrometheusDown
+        expr: up{job="prometheus"} == 0
+        for: 2m
+        labels:
+          severity: warning
+          component: monitoring
+        annotations:
+          summary: "Prometheus is down"
+          description: "Prometheus monitoring service is unavailable."
+
+  # ==============================================================================
+  # Performance Alerts
+  # ==============================================================================
+  - name: auditor_performance
+    interval: 1m
+    rules:
+      - alert: HighLatencyP95
+        expr: histogram_quantile(0.95, rate(auditor_verify_latency_seconds_bucket[5m])) > 0.8
+        for: 5m
+        labels:
+          severity: warning
+          component: api
+        annotations:
+          summary: "High API latency detected"
+          description: "P95 latency is {{ $value }}s (threshold: 0.8s). Performance degradation detected."
+          action: "Check system resources and database performance. Consider scaling."
+
+      - alert: HighLatencyP99
+        expr: histogram_quantile(0.99, rate(auditor_verify_latency_seconds_bucket[5m])) > 2.0
+        for: 5m
+        labels:
+          severity: critical
+          component: api
+        annotations:
+          summary: "Critical API latency"
+          description: "P99 latency is {{ $value }}s (threshold: 2.0s). Severe performance issues."
+          action: "Immediate investigation required. Check logs and resource usage."
+
+      - alert: HighRequestRate
+        expr: rate(auditor_verify_requests_total[5m]) > 100
+        for: 10m
+        labels:
+          severity: info
+          component: api
+        annotations:
+          summary: "High request rate detected"
+          description: "API receiving {{ $value }} requests/sec. Monitor for capacity issues."
+
+      - alert: LowRequestRate
+        expr: rate(auditor_verify_requests_total[5m]) < 0.1
+        for: 30m
+        labels:
+          severity: info
+          component: api
+        annotations:
+          summary: "Unusually low request rate"
+          description: "API receiving only {{ $value }} requests/sec. Possible integration issue."
+
+  # ==============================================================================
+  # Error Rate Alerts
+  # ==============================================================================
+  - name: auditor_errors
+    interval: 1m
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          (
+            rate(auditor_verify_requests_total{status="error"}[5m])
+            /
+            rate(auditor_verify_requests_total[5m])
+          ) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: api
+        annotations:
+          summary: "High verification error rate"
+          description: "Error rate is {{ $value | humanizePercentage }}. More than 5% of requests are failing."
+          action: "Check application logs for error patterns."
+
+      - alert: CriticalErrorRate
+        expr: |
+          (
+            rate(auditor_verify_requests_total{status="error"}[5m])
+            /
+            rate(auditor_verify_requests_total[5m])
+          ) > 0.25
+        for: 2m
+        labels:
+          severity: critical
+          component: api
+        annotations:
+          summary: "Critical error rate"
+          description: "Error rate is {{ $value | humanizePercentage }}. Over 25% of requests failing."
+          action: "Immediate investigation required. Consider rolling back recent changes."
+
+  # ==============================================================================
+  # Confidence Quality Alerts
+  # ==============================================================================
+  - name: auditor_quality
+    interval: 5m
+    rules:
+      - alert: LowConfidenceRate
+        expr: |
+          (
+            rate(auditor_confidence_score_bucket{le="0.6"}[15m])
+            /
+            rate(auditor_confidence_score_count[15m])
+          ) > 0.30
+        for: 15m
+        labels:
+          severity: warning
+          component: verification
+        annotations:
+          summary: "High rate of low-confidence verifications"
+          description: "{{ $value | humanizePercentage }} of verifications have confidence <0.6. Quality issue detected."
+          action: "Review source quality, model performance, and threshold settings."
+
+      - alert: VeryLowConfidenceSpike
+        expr: |
+          (
+            rate(auditor_confidence_score_bucket{le="0.4"}[5m])
+            /
+            rate(auditor_confidence_score_count[5m])
+          ) > 0.15
+        for: 5m
+        labels:
+          severity: critical
+          component: verification
+        annotations:
+          summary: "Spike in very low confidence scores"
+          description: "{{ $value | humanizePercentage }} of verifications have confidence <0.4. Possible model or data issue."
+          action: "Check model loading, source data quality, and recent configuration changes."
+
+  # ==============================================================================
+  # Resource Usage Alerts
+  # ==============================================================================
+  - name: auditor_resources
+    interval: 1m
+    rules:
+      - alert: HighMemoryUsage
+        expr: |
+          (
+            container_memory_usage_bytes{name="auditor-api"}
+            /
+            container_spec_memory_limit_bytes{name="auditor-api"}
+          ) > 0.85
+        for: 5m
+        labels:
+          severity: warning
+          component: api
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is {{ $value | humanizePercentage }} of limit. Possible memory leak."
+          action: "Monitor for memory leak. Check model caching and session management."
+
+      - alert: NearMemoryLimit
+        expr: |
+          (
+            container_memory_usage_bytes{name="auditor-api"}
+            /
+            container_spec_memory_limit_bytes{name="auditor-api"}
+          ) > 0.95
+        for: 2m
+        labels:
+          severity: critical
+          component: api
+        annotations:
+          summary: "Near memory limit"
+          description: "Memory usage is {{ $value | humanizePercentage }} of limit. Container may be killed."
+          action: "Immediate action required. Increase memory limit or restart service."
+
+  # ==============================================================================
+  # Database Alerts
+  # ==============================================================================
+  - name: auditor_database
+    interval: 1m
+    rules:
+      - alert: DatabaseConnectionFailed
+        expr: up{job="postgres"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: database
+        annotations:
+          summary: "Database connection failed"
+          description: "Cannot connect to PostgreSQL database."
+          action: "Check PostgreSQL container status and network connectivity."
+
+  # ==============================================================================
+  # Model Performance Alerts
+  # ==============================================================================
+  - name: auditor_model
+    interval: 5m
+    rules:
+      - alert: LowCacheHitRate
+        expr: |
+          (
+            rate(auditor_cache_hits_total[10m])
+            /
+            (rate(auditor_cache_hits_total[10m]) + rate(auditor_cache_misses_total[10m]))
+          ) < 0.70
+        for: 15m
+        labels:
+          severity: info
+          component: model
+        annotations:
+          summary: "Low cache hit rate"
+          description: "Embedding cache hit rate is {{ $value | humanizePercentage }}. Expected >70%."
+          action: "Consider increasing cache size or reviewing query patterns."
+
+  # ==============================================================================
+  # Throughput Alerts
+  # ==============================================================================
+  - name: auditor_throughput
+    interval: 1m
+    rules:
+      - alert: LowThroughput
+        expr: rate(auditor_verify_requests_total[5m]) < 1
+        for: 30m
+        labels:
+          severity: info
+          component: api
+        annotations:
+          summary: "Low API throughput"
+          description: "API processing only {{ $value }} requests/sec. Below expected baseline."
+          action: "Check if service is properly integrated and accessible."
+
+  # ==============================================================================
+  # SLA Compliance Alerts
+  # ==============================================================================
+  - name: auditor_sla
+    interval: 5m
+    rules:
+      - alert: SLAViolation
+        expr: |
+          (
+            histogram_quantile(0.95, rate(auditor_verify_latency_seconds_bucket[5m])) > 0.8
+            or
+            (rate(auditor_verify_requests_total{status="error"}[5m]) / rate(auditor_verify_requests_total[5m])) > 0.05
+          )
+        for: 10m
+        labels:
+          severity: warning
+          component: sla
+        annotations:
+          summary: "SLA violation detected"
+          description: "Service is not meeting SLA requirements (p95 latency <800ms, error rate <5%)."
+          action: "Review service health and performance metrics. Consider incident escalation."

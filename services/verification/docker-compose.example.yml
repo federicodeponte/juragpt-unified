@@ -1,0 +1,159 @@
+version: '3.8'
+
+services:
+  # ==============================================================================
+  # JuraGPT Auditor API - Main verification service
+  # ==============================================================================
+  auditor-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: auditor-api
+    image: juragpt-auditor:latest
+    ports:
+      - "8888:8000"
+    environment:
+      # Database configuration
+      DATABASE_URL: postgresql://auditor:${POSTGRES_PASSWORD:-auditor_pass}@postgres:5432/auditor
+
+      # Model configuration
+      EMBEDDING_MODEL: intfloat/multilingual-e5-large
+      SPACY_MODEL: de_core_news_md
+
+      # Application settings
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      CACHE_ENABLED: "true"
+      AUTO_RETRY: "true"
+      CONFIDENCE_THRESHOLD: "0.75"
+
+      # Performance tuning
+      CACHE_SIZE: "1000"
+      BATCH_SIZE: "32"
+    volumes:
+      # Persist models (optional, models are baked into image)
+      - model-cache:/home/auditor/.cache
+      # Configuration (optional override)
+      - ./config.yaml:/app/config.yaml:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    networks:
+      - auditor-network
+
+  # ==============================================================================
+  # PostgreSQL - Production database
+  # ==============================================================================
+  postgres:
+    image: postgres:15-alpine
+    container_name: auditor-postgres
+    environment:
+      POSTGRES_DB: auditor
+      POSTGRES_USER: auditor
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-auditor_pass}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=en_US.UTF-8"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      # Optional: init scripts
+      # - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U auditor -d auditor"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - auditor-network
+
+  # ==============================================================================
+  # Prometheus - Metrics collection
+  # ==============================================================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: auditor-prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=15d'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/prometheus/alerts.yml:/etc/prometheus/alerts.yml:ro
+      - prometheus-data:/prometheus
+    ports:
+      - "9090:9090"
+    depends_on:
+      - auditor-api
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - auditor-network
+
+  # ==============================================================================
+  # Grafana - Monitoring dashboards
+  # ==============================================================================
+  grafana:
+    image: grafana/grafana:latest
+    container_name: auditor-grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_SERVER_ROOT_URL: http://localhost:3333
+      GF_INSTALL_PLUGINS: ""
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "3333:3000"
+    depends_on:
+      - prometheus
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - auditor-network
+
+# ==============================================================================
+# Volumes - Persistent data storage
+# ==============================================================================
+volumes:
+  # Database persistence
+  postgres-data:
+    driver: local
+
+  # Model cache (optional, models are in image)
+  model-cache:
+    driver: local
+
+  # Metrics persistence
+  prometheus-data:
+    driver: local
+
+  # Dashboard configurations
+  grafana-data:
+    driver: local
+
+# ==============================================================================
+# Networks - Isolated network for services
+# ==============================================================================
+networks:
+  auditor-network:
+    driver: bridge

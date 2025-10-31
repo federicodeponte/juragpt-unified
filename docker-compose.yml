@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    environment:
+      - QDRANT__SERVICE__GRPC_PORT=6334
+
+  postgres:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: juragpt
+      POSTGRES_USER: juragpt
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-changeme}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  embedder:
+    build: ./services/embedder
+    ports:
+      - "8003:8003"
+    environment:
+      - LOG_LEVEL=INFO
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+
+  retrieval:
+    build: ./services/retrieval
+    ports:
+      - "8001:8001"
+    depends_on:
+      - qdrant
+      - embedder
+    environment:
+      - QDRANT_URL=${QDRANT_URL:-http://qdrant:6333}
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+      - EMBEDDER_URL=http://embedder:8003
+
+  verification:
+    build: ./services/verification
+    ports:
+      - "8002:8002"
+    depends_on:
+      - postgres
+      - embedder
+    environment:
+      - DATABASE_URL=postgresql://juragpt:${DATABASE_PASSWORD:-changeme}@postgres:5432/juragpt
+      - EMBEDDER_URL=http://embedder:8003
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-change-me-in-production}
+      - ENABLE_AUTH=${ENABLE_AUTH:-true}
+
+  orchestrator:
+    build: ./services/orchestrator
+    ports:
+      - "8888:8888"
+    depends_on:
+      - retrieval
+      - verification
+    environment:
+      - RETRIEVAL_URL=http://retrieval:8001
+      - VERIFICATION_URL=http://verification:8002
+      - ENABLE_AUTH=${ENABLE_AUTH:-true}
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus:/etc/prometheus
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana:/etc/grafana/provisioning
+    depends_on:
+      - prometheus
+
+volumes:
+  qdrant_data:
+  postgres_data:
+  prometheus_data:
+  grafana_data:

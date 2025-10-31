@@ -1,0 +1,73 @@
+# Prometheus Configuration for JuraGPT Auditor
+# Scrapes metrics from the API service and provides data to Grafana
+
+global:
+  scrape_interval: 15s      # Scrape targets every 15 seconds
+  evaluation_interval: 15s  # Evaluate rules every 15 seconds
+  scrape_timeout: 10s       # Timeout for each scrape
+
+  # External labels for federated setups or remote write
+  external_labels:
+    cluster: 'auditor-production'
+    environment: 'docker'
+
+# Alertmanager configuration (optional, for production alerts)
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+          # - alertmanager:9093
+
+# Load alert rules
+rule_files:
+  - 'alerts.yml'
+
+# Scrape configuration
+scrape_configs:
+  # ==============================================================================
+  # Prometheus self-monitoring
+  # ==============================================================================
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          service: 'prometheus'
+
+  # ==============================================================================
+  # JuraGPT Auditor API - Main verification service
+  # ==============================================================================
+  - job_name: 'auditor-api'
+    scrape_interval: 10s  # More frequent scraping for API
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['auditor-api:8000']
+        labels:
+          service: 'auditor'
+          component: 'api'
+
+  # ==============================================================================
+  # PostgreSQL Database Metrics (optional, requires postgres_exporter)
+  # ==============================================================================
+  # - job_name: 'postgres'
+  #   static_configs:
+  #     - targets: ['postgres-exporter:9187']
+  #       labels:
+  #         service: 'postgres'
+  #         database: 'auditor'
+
+  # ==============================================================================
+  # Node Exporter (optional, for system metrics)
+  # ==============================================================================
+  # - job_name: 'node'
+  #   static_configs:
+  #     - targets: ['node-exporter:9100']
+  #       labels:
+  #         service: 'node-exporter'
+
+# Recording rules for pre-computed aggregations
+# Commented out - can be enabled for performance optimization
+# - name: auditor_request_rate
+#   interval: 1m
+#   rules:
+#     - record: job:auditor_verify_requests:rate5m
+#       expr: rate(auditor_verify_requests_total[5m])
