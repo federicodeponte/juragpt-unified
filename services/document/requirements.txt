@@ -1,0 +1,61 @@
+# FastAPI & Server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.12.3
+pydantic-settings==2.7.0
+
+# Database & Vector Store
+supabase==2.22.3
+pgvector==0.3.6
+psycopg2-binary==2.9.10
+
+# Redis for PII mapping cache
+redis==5.2.1
+hiredis==3.0.0
+
+# Security (explicitly pinned for vulnerability fixes)
+cryptography==46.0.3  # CVE fixes from 3.4.8
+certifi==2025.10.5  # Updated SSL certificates from 2020.6.20
+
+# PII Detection & Anonymization
+presidio-analyzer==2.2.359
+presidio-anonymizer==2.2.359
+spacy==3.8.3
+
+# NLP & Embeddings
+sentence-transformers==3.3.1
+transformers==4.47.1
+
+# Google Gemini
+google-generativeai==0.8.3
+
+# Document Processing
+python-docx==1.1.2
+PyPDF2==3.0.1
+pdfplumber==0.11.4
+PyMuPDF==1.24.14  # fitz - robust PDF extraction
+python-magic==0.4.27  # file type detection
+langdetect==1.0.9  # language detection
+
+# Utilities
+python-dotenv==1.0.1
+httpx==0.28.1
+tenacity==9.0.0
+
+# Modal OCR Service
+modal>=0.66.54
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+
+# Monitoring & Observability
+prometheus-client==0.21.0
+sentry-sdk[fastapi]==2.21.0
+
+# Development
+black==24.10.0
+ruff==0.8.4
+mypy==1.14.0

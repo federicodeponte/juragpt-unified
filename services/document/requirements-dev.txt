@@ -1,0 +1,24 @@
+# Development and CI/CD dependencies
+# These are NOT needed in production - only for local development and CI
+
+# Code formatting and linting
+black==24.10.0
+flake8==7.1.1
+flake8-docstrings==1.7.0
+
+# Type checking
+mypy==1.14.0
+
+# Testing
+pytest==8.4.2
+pytest-cov==7.0.0
+pytest-asyncio==1.2.0
+
+# Security scanning
+safety==3.2.11
+bandit==1.8.0
+pip-audit==2.7.3
+
+# Documentation
+mkdocs==1.6.1
+mkdocs-material==9.5.48
