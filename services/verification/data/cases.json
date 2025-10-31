@@ -1,0 +1,200 @@
+[
+  {
+    "id": "bgh_vi_zr_396_18",
+    "court": "BGH",
+    "title": "BGH VI ZR 396/18 – Fahrlässigkeit und Schadensersatz",
+    "text": "Der Bundesgerichtshof stellte klar, dass einfache Fahrlässigkeit ausreicht, um eine Haftung nach § 823 Abs. 1 BGB zu begründen, wenn ein geschütztes Rechtsgut verletzt wurde. Die Unterscheidung zwischen einfacher und grober Fahrlässigkeit ist nur für die Frage der Haftungsverteilung bei mehreren Beteiligten relevant.",
+    "source": "https://openjur.de/u/2284020.html",
+    "date": "2019-05-14",
+    "area": "tort_law"
+  },
+  {
+    "id": "bgh_viii_zr_70_20",
+    "court": "BGH",
+    "title": "BGH VIII ZR 70/20 – Mietminderung bei Mängeln",
+    "text": "Eine Mietminderung nach § 536 BGB setzt voraus, dass die Mietsache einen Mangel aufweist, der ihre Tauglichkeit zum vertragsgemäßen Gebrauch aufhebt oder mindert. Der Mieter muss den Mangel nicht selbst verschuldet haben. Die Minderung tritt kraft Gesetzes ein, sobald der Mangel besteht.",
+    "source": "https://openjur.de/u/2341234.html",
+    "date": "2021-03-24",
+    "area": "rental_law"
+  },
+  {
+    "id": "bgh_ii_zr_83_19",
+    "court": "BGH",
+    "title": "BGH II ZR 83/19 – Geschäftsführerhaftung in der GmbH",
+    "text": "Die Geschäftsführer einer GmbH haften der Gesellschaft nach § 43 Abs. 2 GmbHG zum Schadensersatz, wenn sie ihre Sorgfaltspflichten verletzen. Dazu gehört insbesondere die Pflicht, bei drohender Zahlungsunfähigkeit rechtzeitig Insolvenzantrag zu stellen. Ein Verstoß kann zu persönlicher Haftung führen.",
+    "source": "https://openjur.de/u/2298765.html",
+    "date": "2020-09-15",
+    "area": "corporate_law"
+  },
+  {
+    "id": "bverfg_1_bvr_276_17",
+    "court": "BVerfG",
+    "title": "BVerfG 1 BvR 276/17 – Recht auf informationelle Selbstbestimmung",
+    "text": "Das Grundrecht auf informationelle Selbstbestimmung gewährleistet die Befugnis des Einzelnen, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Einschränkungen dieses Rechts bedürfen einer verfassungsgemäßen gesetzlichen Grundlage, aus der sich die Voraussetzungen und der Umfang der Beschränkungen klar und für den Bürger erkennbar ergeben.",
+    "source": "https://www.bundesverfassungsgericht.de",
+    "date": "2020-11-10",
+    "area": "constitutional_law"
+  },
+  {
+    "id": "bgh_i_zr_250_19",
+    "court": "BGH",
+    "title": "BGH I ZR 250/19 – Irreführende Werbung",
+    "text": "Eine Werbung ist irreführend im Sinne von § 5 UWG, wenn sie geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er andernfalls nicht getroffen hätte. Dabei ist auf die Wahrnehmung des durchschnittlich informierten, aufmerksamen und verständigen Durchschnittsverbrauchers abzustellen.",
+    "source": "https://openjur.de/u/2334567.html",
+    "date": "2020-06-18",
+    "area": "competition_law"
+  },
+  {
+    "id": "bgh_iv_zr_123_18",
+    "court": "BGH",
+    "title": "BGH IV ZR 123/18 – Ärztliche Aufklärungspflicht",
+    "text": "Ein Arzt ist verpflichtet, den Patienten über alle wesentlichen Umstände der Behandlung aufzuklären, insbesondere über Risiken und Erfolgschancen. Die Aufklärung muss so rechtzeitig erfolgen, dass der Patient seine Entscheidung wohlüberlegt treffen kann. Bei elektiven Eingriffen ist eine Aufklärung am Vortag in der Regel zu spät.",
+    "source": "https://openjur.de/u/2267890.html",
+    "date": "2019-02-12",
+    "area": "medical_law"
+  },
+  {
+    "id": "bag_2_azr_412_19",
+    "court": "BAG",
+    "title": "BAG 2 AZR 412/19 – Kündigungsschutz bei Betriebsänderung",
+    "text": "Eine betriebsbedingte Kündigung ist nur dann sozial gerechtfertigt, wenn das Beschäftigungsbedürfnis weggefallen ist und eine Weiterbeschäftigung an einem anderen Arbeitsplatz nicht möglich ist. Der Arbeitgeber muss darlegen, welche unternehmerische Entscheidung dem Wegfall zugrunde liegt.",
+    "source": "https://openjur.de/u/2378901.html",
+    "date": "2020-11-26",
+    "area": "labor_law"
+  },
+  {
+    "id": "bgh_xii_zr_89_17",
+    "court": "BGH",
+    "title": "BGH XII ZR 89/17 – Zugewinnausgleich bei Scheidung",
+    "text": "Im Zugewinnausgleich ist das Endvermögen jedes Ehegatten nach § 1375 BGB festzustellen und mit dem Anfangsvermögen zu vergleichen. Der Ehegatte mit dem höheren Zugewinn muss die Hälfte der Differenz an den anderen ausgleichen. Zur Berechnung gehören alle Vermögenswerte, auch künftige Rentenanwartschaften.",
+    "source": "https://openjur.de/u/2189456.html",
+    "date": "2018-07-11",
+    "area": "family_law"
+  },
+  {
+    "id": "bgh_v_zr_235_19",
+    "court": "BGH",
+    "title": "BGH V ZR 235/19 – Sachmängel beim Kaufvertrag",
+    "text": "Ein Sachmangel liegt vor, wenn die Kaufsache bei Gefahrübergang nicht die vereinbarte Beschaffenheit hat oder sich nicht für die nach dem Vertrag vorausgesetzte oder gewöhnliche Verwendung eignet. Der Verkäufer haftet auch für Mängel, die erst nach dem Kauf, aber vor Gefahrübergang entstanden sind.",
+    "source": "https://openjur.de/u/2401234.html",
+    "date": "2021-01-29",
+    "area": "sales_law"
+  },
+  {
+    "id": "bfh_ii_r_31_18",
+    "court": "BFH",
+    "title": "BFH II R 31/18 – Betriebsausgabenabzug",
+    "text": "Aufwendungen sind als Betriebsausgaben abzugsfähig, wenn sie durch den Betrieb veranlasst sind. Dies ist der Fall, wenn ein objektiver Zusammenhang mit dem Betrieb besteht und subjektiv dem Betrieb zu dienen bestimmt sind. Gemischte Aufwendungen sind aufzuteilen.",
+    "source": "https://openjur.de/u/2345678.html",
+    "date": "2020-04-08",
+    "area": "tax_law"
+  },
+  {
+    "id": "bgh_iii_zr_43_20",
+    "court": "BGH",
+    "title": "BGH III ZR 43/20 – Architektenhonorar nach HOAI",
+    "text": "Die Honorarordnung für Architekten und Ingenieure (HOAI) regelt die Berechnung der Vergütung für Architektenleistungen. Ein Honorar, das die Mindestsätze unterschreitet, ist grundsätzlich unwirksam, es sei denn, die Vereinbarung ist im Einzelnen ausgehandelt worden.",
+    "source": "https://openjur.de/u/2412345.html",
+    "date": "2021-05-20",
+    "area": "construction_law"
+  },
+  {
+    "id": "olg_frankfurt_6_u_123_19",
+    "court": "OLG Frankfurt",
+    "title": "OLG Frankfurt 6 U 123/19 – Widerruf bei Haustürgeschäften",
+    "text": "Bei Verträgen, die außerhalb von Geschäftsräumen geschlossen werden, steht dem Verbraucher nach § 312g BGB ein Widerrufsrecht zu. Der Unternehmer muss über dieses Recht ordnungsgemäß belehren. Fehlt die Belehrung oder ist sie fehlerhaft, beginnt die Widerrufsfrist nicht zu laufen.",
+    "source": "https://openjur.de/u/2234567.html",
+    "date": "2020-02-14",
+    "area": "consumer_protection"
+  },
+  {
+    "id": "bgh_vii_zr_195_18",
+    "court": "BGH",
+    "title": "BGH VII ZR 195/18 – Mängelbeseitigung beim Werkvertrag",
+    "text": "Der Besteller kann bei einem mangelhaften Werk zunächst Nacherfüllung verlangen. Der Unternehmer kann zwischen Nachbesserung und Neuherstellung wählen. Nur wenn die Nacherfüllung fehlschlägt oder unzumutbar ist, kann der Besteller mindern oder vom Vertrag zurücktreten.",
+    "source": "https://openjur.de/u/2256789.html",
+    "date": "2019-11-14",
+    "area": "contract_law"
+  },
+  {
+    "id": "bverwg_6_c_12_19",
+    "court": "BVerwG",
+    "title": "BVerwG 6 C 12/19 – Baurecht und Nachbarschutz",
+    "text": "Ein Nachbar kann sich gegen eine Baugenehmigung zur Wehr setzen, wenn diese gegen drittschützende Vorschriften des Baurechts verstößt. Dazu gehören insbesondere Abstandsflächenvorschriften und Regelungen über die Art der baulichen Nutzung. Der Nachbar muss in seinen Rechten verletzt sein.",
+    "source": "https://openjur.de/u/2367890.html",
+    "date": "2020-08-19",
+    "area": "administrative_law"
+  },
+  {
+    "id": "bgh_ix_zr_88_19",
+    "court": "BGH",
+    "title": "BGH IX ZR 88/19 – Insolvenzanfechtung",
+    "text": "Der Insolvenzverwalter kann Rechtshandlungen anfechten, die der Schuldner in der Krise vor der Insolvenzeröffnung vorgenommen hat und die die Gläubiger benachteiligen. Dazu gehören insbesondere unentgeltliche Leistungen und Zahlungen, die einzelne Gläubiger bevorzugen.",
+    "source": "https://openjur.de/u/2389012.html",
+    "date": "2020-10-22",
+    "area": "insolvency_law"
+  },
+  {
+    "id": "bsg_b_13_r_45_19",
+    "court": "BSG",
+    "title": "BSG B 13 R 45/19 – Rentenanspruch bei Erwerbsminderung",
+    "text": "Ein Anspruch auf Rente wegen Erwerbsminderung besteht, wenn der Versicherte wegen Krankheit oder Behinderung auf nicht absehbare Zeit außerstande ist, mindestens drei Stunden täglich erwerbstätig zu sein. Die Feststellung erfolgt durch ärztliche Gutachten.",
+    "source": "https://openjur.de/u/2423456.html",
+    "date": "2021-06-30",
+    "area": "social_law"
+  },
+  {
+    "id": "eugh_c_311_18",
+    "court": "EuGH",
+    "title": "EuGH C-311/18 – Datenschutzgrundverordnung",
+    "text": "Die Datenschutz-Grundverordnung (DSGVO) gewährt betroffenen Personen umfassende Rechte in Bezug auf ihre personenbezogenen Daten. Dazu gehört das Recht auf Auskunft, Berichtigung und Löschung. Verstöße können mit hohen Bußgeldern geahndet werden.",
+    "source": "https://curia.europa.eu",
+    "date": "2019-09-24",
+    "area": "data_protection"
+  },
+  {
+    "id": "bgh_i_zr_134_18",
+    "court": "BGH",
+    "title": "BGH I ZR 134/18 – Urheberrecht bei Online-Inhalten",
+    "text": "Das öffentliche Zugänglichmachen urheberrechtlich geschützter Werke im Internet bedarf der Einwilligung des Rechteinhabers. Eine Verlinkung auf frei zugängliche Inhalte stellt grundsätzlich keine Urheberrechtsverletzung dar, es sei denn, Schutzmaßnahmen werden umgangen.",
+    "source": "https://openjur.de/u/2289123.html",
+    "date": "2019-07-25",
+    "area": "intellectual_property"
+  },
+  {
+    "id": "olg_muenchen_7_u_234_20",
+    "court": "OLG München",
+    "title": "OLG München 7 U 234/20 – Schadensersatz bei Verkehrsunfall",
+    "text": "Bei einem Verkehrsunfall haftet der Schädiger nach § 823 BGB auf Schadensersatz. Dazu gehört der Ersatz des Fahrzeugschadens, der Nutzungsausfallentschädigung und gegebenenfalls eines Schmerzensgeldes. Die Haftung kann bei Mitverschulden des Geschädigten gemindert werden.",
+    "source": "https://openjur.de/u/2445678.html",
+    "date": "2021-09-16",
+    "area": "traffic_law"
+  },
+  {
+    "id": "lag_koeln_3_sa_567_19",
+    "court": "LAG Köln",
+    "title": "LAG Köln 3 Sa 567/19 – Diskriminierung am Arbeitsplatz",
+    "text": "Das Allgemeine Gleichbehandlungsgesetz (AGG) verbietet Diskriminierungen wegen der ethnischen Herkunft, des Geschlechts, der Religion, einer Behinderung, des Alters oder der sexuellen Identität. Betroffene können Schadensersatz und Entschädigung verlangen, wenn sie benachteiligt werden.",
+    "source": "https://openjur.de/u/2456789.html",
+    "date": "2020-05-28",
+    "area": "labor_law"
+  },
+  {
+    "id": "bgh_vi_zr_223_17",
+    "court": "BGH",
+    "title": "BGH VI ZR 223/17 – Schmerzensgeld bei Körperverletzung",
+    "text": "Das Schmerzensgeld nach § 253 Abs. 2 BGB soll einen angemessenen Ausgleich für erlittene immaterielle Schäden bieten. Bei der Bemessung sind Art und Schwere der Verletzung, Dauer und Intensität der Schmerzen sowie die Beeinträchtigung der Lebensführung zu berücksichtigen.",
+    "source": "https://openjur.de/u/2178234.html",
+    "date": "2018-04-10",
+    "area": "tort_law"
+  },
+  {
+    "id": "bgh_xi_zr_565_19",
+    "court": "BGH",
+    "title": "BGH XI ZR 565/19 – Widerrufsbelehrung bei Verbraucherdarlehen",
+    "text": "Bei Verbraucherdarlehensverträgen muss der Darlehensgeber den Verbraucher über sein Widerrufsrecht belehren. Die Belehrung muss klar und verständlich sein und alle gesetzlich vorgeschriebenen Angaben enthalten. Eine fehlerhafte Belehrung führt dazu, dass die Widerrufsfrist nicht zu laufen beginnt.",
+    "source": "https://openjur.de/u/2467890.html",
+    "date": "2021-02-09",
+    "area": "banking_law"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "q001",
+    "query": "Wann haftet jemand nach §823 BGB?",
+    "category": "tort_law",
+    "complexity": "basic"
+  },
+  {
+    "id": "q002",
+    "query": "Was ist der Unterschied zwischen Vorsatz und Fahrlässigkeit?",
+    "category": "general_principles",
+    "complexity": "basic"
+  },
+  {
+    "id": "q003",
+    "query": "Welche Rechte hat ein Mieter bei Mängeln der Wohnung?",
+    "category": "rental_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q004",
+    "query": "Kann ich als Käufer vom Kaufvertrag zurücktreten, wenn die Ware mangelhaft ist?",
+    "category": "sales_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q005",
+    "query": "Was sind die Voraussetzungen für eine betriebsbedingte Kündigung?",
+    "category": "labor_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q006",
+    "query": "Wie wird das Schmerzensgeld bei einer Körperverletzung berechnet?",
+    "category": "tort_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q007",
+    "query": "Welche Pflichten hat ein Geschäftsführer einer GmbH?",
+    "category": "corporate_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q008",
+    "query": "Was versteht man unter dem Grundsatz von Treu und Glauben?",
+    "category": "general_principles",
+    "complexity": "basic"
+  },
+  {
+    "id": "q009",
+    "query": "Kann ich ein Testament anfechten?",
+    "category": "inheritance_law",
+    "complexity": "advanced"
+  },
+  {
+    "id": "q010",
+    "query": "Welche Rechte habe ich bei einem Verkehrsunfall?",
+    "category": "traffic_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q011",
+    "query": "Was ist eine offene Handelsgesellschaft (OHG)?",
+    "category": "commercial_law",
+    "complexity": "basic"
+  },
+  {
+    "id": "q012",
+    "query": "Wie lange kann ich einen Kaufvertrag widerrufen?",
+    "category": "consumer_protection",
+    "complexity": "basic"
+  },
+  {
+    "id": "q013",
+    "query": "Was bedeutet das Recht auf informationelle Selbstbestimmung?",
+    "category": "constitutional_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q014",
+    "query": "Wann ist eine Werbung irreführend?",
+    "category": "competition_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q015",
+    "query": "Muss mich mein Arzt vor einer Operation aufklären?",
+    "category": "medical_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q016",
+    "query": "Wie funktioniert der Zugewinnausgleich bei einer Scheidung?",
+    "category": "family_law",
+    "complexity": "advanced"
+  },
+  {
+    "id": "q017",
+    "query": "Was kann ich tun, wenn mein Vermieter die Wohnung nicht repariert?",
+    "category": "rental_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q018",
+    "query": "Sind Allgemeine Geschäftsbedingungen (AGB) immer wirksam?",
+    "category": "agb",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q019",
+    "query": "Wer erbt, wenn kein Testament vorhanden ist?",
+    "category": "inheritance_law",
+    "complexity": "basic"
+  },
+  {
+    "id": "q020",
+    "query": "Was ist ein Werkvertrag und wie unterscheidet er sich vom Dienstvertrag?",
+    "category": "contract_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q021",
+    "query": "Kann ich meine Daten nach der DSGVO löschen lassen?",
+    "category": "data_protection",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q022",
+    "query": "Was ist der Unterschied zwischen Diebstahl und Betrug?",
+    "category": "criminal_law",
+    "complexity": "basic"
+  },
+  {
+    "id": "q023",
+    "query": "Welche Kosten muss die unterlegene Partei in einem Gerichtsverfahren tragen?",
+    "category": "procedural_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q024",
+    "query": "Was bedeutet die Buchführungspflicht für Kaufleute?",
+    "category": "commercial_law",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "q025",
+    "query": "Kann mein Nachbar gegen meine Baugenehmigung vorgehen?",
+    "category": "administrative_law",
+    "complexity": "advanced"
+  }
+]

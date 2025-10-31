@@ -1,0 +1,792 @@
+[
+  {
+    "id": "a001",
+    "query_id": "q001",
+    "generated_answer": "Nach §823 Abs. 1 BGB haftet, wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt. Der Schädiger ist zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.98
+      }
+    ]
+  },
+  {
+    "id": "a002",
+    "query_id": "q001",
+    "generated_answer": "Nach §823 BGB haftet jemand, der absichtlich das Eigentum eines anderen verletzt. Auch grobe Fahrlässigkeit führt immer zur Haftung nach diesem Paragraphen. Bei einfacher Fahrlässigkeit gibt es keine Haftung.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.72
+      },
+      {
+        "source_id": "bgh_vi_zr_396_18",
+        "text": "Der Bundesgerichtshof stellte klar, dass einfache Fahrlässigkeit ausreicht, um eine Haftung nach § 823 Abs. 1 BGB zu begründen, wenn ein geschütztes Rechtsgut verletzt wurde.",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "id": "a003",
+    "query_id": "q002",
+    "generated_answer": "Vorsatz bedeutet, dass jemand absichtlich handelt und die Folgen seines Handelns kennt und will. Fahrlässigkeit liegt vor, wenn jemand die im Verkehr erforderliche Sorgfalt außer Acht lässt. Nach § 276 BGB hat der Schuldner Vorsatz und Fahrlässigkeit zu vertreten.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_276",
+        "text": "Der Schuldner hat Vorsatz und Fahrlässigkeit zu vertreten, sofern nicht ein anderes bestimmt ist. Fahrlässig handelt, wer die im Verkehr erforderliche Sorgfalt außer Acht lässt.",
+        "score": 0.91
+      },
+      {
+        "source_id": "stgb_15",
+        "text": "Strafbar ist nur vorsätzliches Handeln, wenn nicht das Gesetz fahrlässiges Handeln ausdrücklich mit Strafe bedroht.",
+        "score": 0.78
+      }
+    ]
+  },
+  {
+    "id": "a004",
+    "query_id": "q003",
+    "generated_answer": "Bei Mängeln der Wohnung hat der Mieter nach § 536 BGB das Recht zur Mietminderung. Die Minderung tritt kraft Gesetzes ein, sobald der Mangel besteht. Der Mieter muss den Mangel nicht selbst verschuldet haben. Zusätzlich kann er Schadensersatz verlangen, wenn der Vermieter den Mangel zu vertreten hat.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren. Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.",
+        "score": 0.84
+      },
+      {
+        "source_id": "bgh_viii_zr_70_20",
+        "text": "Eine Mietminderung nach § 536 BGB setzt voraus, dass die Mietsache einen Mangel aufweist, der ihre Tauglichkeit zum vertragsgemäßen Gebrauch aufhebt oder mindert. Der Mieter muss den Mangel nicht selbst verschuldet haben. Die Minderung tritt kraft Gesetzes ein, sobald der Mangel besteht.",
+        "score": 0.96
+      }
+    ]
+  },
+  {
+    "id": "a005",
+    "query_id": "q004",
+    "generated_answer": "Ja, bei einem mangelhaften Kaufgegenstand können Sie zunächst Nacherfüllung verlangen. Wenn diese fehlschlägt oder unzumutbar ist, können Sie vom Vertrag zurücktreten oder den Kaufpreis mindern. Der Verkäufer hat nach § 433 BGB die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_433",
+        "text": "Durch den Kaufvertrag wird der Verkäufer einer Sache verpflichtet, dem Käufer die Sache zu übergeben und das Eigentum an der Sache zu verschaffen. Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+        "score": 0.88
+      },
+      {
+        "source_id": "bgh_v_zr_235_19",
+        "text": "Ein Sachmangel liegt vor, wenn die Kaufsache bei Gefahrübergang nicht die vereinbarte Beschaffenheit hat oder sich nicht für die nach dem Vertrag vorausgesetzte oder gewöhnliche Verwendung eignet.",
+        "score": 0.82
+      }
+    ]
+  },
+  {
+    "id": "a006",
+    "query_id": "q005",
+    "generated_answer": "Eine betriebsbedingte Kündigung ist nach dem Kündigungsschutzgesetz nur dann sozial gerechtfertigt, wenn das Beschäftigungsbedürfnis weggefallen ist und eine Weiterbeschäftigung an einem anderen Arbeitsplatz nicht möglich ist. Der Arbeitgeber muss darlegen, welche unternehmerische Entscheidung dem Wegfall zugrunde liegt. Außerdem muss eine Sozialauswahl getroffen werden.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bag_2_azr_412_19",
+        "text": "Eine betriebsbedingte Kündigung ist nur dann sozial gerechtfertigt, wenn das Beschäftigungsbedürfnis weggefallen ist und eine Weiterbeschäftigung an einem anderen Arbeitsplatz nicht möglich ist. Der Arbeitgeber muss darlegen, welche unternehmerische Entscheidung dem Wegfall zugrunde liegt.",
+        "score": 0.94
+      }
+    ]
+  },
+  {
+    "id": "a007",
+    "query_id": "q006",
+    "generated_answer": "Das Schmerzensgeld nach § 253 Abs. 2 BGB soll einen angemessenen Ausgleich für erlittene immaterielle Schäden bieten. Bei der Bemessung sind Art und Schwere der Verletzung, Dauer und Intensität der Schmerzen sowie die Beeinträchtigung der Lebensführung zu berücksichtigen. Es gibt keine festen Tabellen, aber Rechtsprechung dient als Orientierung.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_vi_zr_223_17",
+        "text": "Das Schmerzensgeld nach § 253 Abs. 2 BGB soll einen angemessenen Ausgleich für erlittene immaterielle Schäden bieten. Bei der Bemessung sind Art und Schwere der Verletzung, Dauer und Intensität der Schmerzen sowie die Beeinträchtigung der Lebensführung zu berücksichtigen.",
+        "score": 0.97
+      }
+    ]
+  },
+  {
+    "id": "a008",
+    "query_id": "q007",
+    "generated_answer": "Die Geschäftsführer einer GmbH haben die Sorgfaltspflicht eines ordentlichen Geschäftsmannes zu beachten. Sie haften der Gesellschaft nach § 43 Abs. 2 GmbHG zum Schadensersatz, wenn sie ihre Pflichten verletzen. Dazu gehört insbesondere die Pflicht, bei drohender Zahlungsunfähigkeit rechtzeitig Insolvenzantrag zu stellen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_ii_zr_83_19",
+        "text": "Die Geschäftsführer einer GmbH haften der Gesellschaft nach § 43 Abs. 2 GmbHG zum Schadensersatz, wenn sie ihre Sorgfaltspflichten verletzen. Dazu gehört insbesondere die Pflicht, bei drohender Zahlungsunfähigkeit rechtzeitig Insolvenzantrag zu stellen.",
+        "score": 0.93
+      }
+    ]
+  },
+  {
+    "id": "a009",
+    "query_id": "q008",
+    "generated_answer": "Der Grundsatz von Treu und Glauben ist in § 242 BGB verankert. Er besagt, dass der Schuldner die Leistung so zu bewirken hat, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern. Dieser Grundsatz gilt für das gesamte Privatrecht und verlangt ein redliches, auf Fairness ausgerichtetes Verhalten.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_242",
+        "text": "Der Schuldner ist verpflichtet, die Leistung so zu bewirken, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+        "score": 0.89
+      },
+      {
+        "source_id": "bgb_157",
+        "text": "Verträge sind so auszulegen, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "id": "a010",
+    "query_id": "q009",
+    "generated_answer": "Ein Testament kann aus verschiedenen Gründen angefochten werden, beispielsweise bei Irrtum, Täuschung oder Drohung. Die Anfechtung muss innerhalb eines Jahres erfolgen, nachdem der Anfechtungsberechtigte von dem Anfechtungsgrund Kenntnis erlangt hat. Nach § 2078 BGB ist eine Anfechtung auch bei Übergehung eines Pflichtteilsberechtigten möglich.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_1922",
+        "text": "Mit dem Tode einer Person (Erbfall) geht deren Vermögen (Erbschaft) als Ganzes auf eine oder mehrere andere Personen (Erben) über.",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "id": "a011",
+    "query_id": "q010",
+    "generated_answer": "Bei einem Verkehrsunfall haben Sie Anspruch auf Schadensersatz nach § 823 BGB, wenn der Unfallgegner den Unfall verschuldet hat. Dazu gehört der Ersatz des Fahrzeugschadens, der Nutzungsausfallentschädigung und gegebenenfalls eines Schmerzensgeldes. Die Haftung kann bei Mitverschulden gemindert werden.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.86
+      },
+      {
+        "source_id": "olg_muenchen_7_u_234_20",
+        "text": "Bei einem Verkehrsunfall haftet der Schädiger nach § 823 BGB auf Schadensersatz. Dazu gehört der Ersatz des Fahrzeugschadens, der Nutzungsausfallentschädigung und gegebenenfalls eines Schmerzensgeldes. Die Haftung kann bei Mitverschulden des Geschädigten gemindert werden.",
+        "score": 0.95
+      }
+    ]
+  },
+  {
+    "id": "a012",
+    "query_id": "q011",
+    "generated_answer": "Eine offene Handelsgesellschaft (OHG) ist nach § 105 HGB eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist. Bei keinem der Gesellschafter ist die Haftung gegenüber den Gesellschaftsgläubigern beschränkt. Alle Gesellschafter haften also unbeschränkt und persönlich.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_105",
+        "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine offene Handelsgesellschaft, wenn bei keinem der Gesellschafter die Haftung gegenüber den Gesellschaftsgläubigern beschränkt ist.",
+        "score": 0.96
+      }
+    ]
+  },
+  {
+    "id": "a013",
+    "query_id": "q012",
+    "generated_answer": "Bei Verträgen, die außerhalb von Geschäftsräumen oder im Fernabsatz geschlossen werden, haben Sie nach § 312g BGB ein 14-tägiges Widerrufsrecht. Der Unternehmer muss Sie über dieses Recht ordnungsgemäß belehren. Fehlt die Belehrung oder ist sie fehlerhaft, beginnt die Widerrufsfrist nicht zu laufen und verlängert sich auf maximal 12 Monate und 14 Tage.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "olg_frankfurt_6_u_123_19",
+        "text": "Bei Verträgen, die außerhalb von Geschäftsräumen geschlossen werden, steht dem Verbraucher nach § 312g BGB ein Widerrufsrecht zu. Der Unternehmer muss über dieses Recht ordnungsgemäß belehren. Fehlt die Belehrung oder ist sie fehlerhaft, beginnt die Widerrufsfrist nicht zu laufen.",
+        "score": 0.92
+      }
+    ]
+  },
+  {
+    "id": "a014",
+    "query_id": "q013",
+    "generated_answer": "Das Recht auf informationelle Selbstbestimmung gewährleistet die Befugnis des Einzelnen, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Einschränkungen dieses Rechts bedürfen einer verfassungsgemäßen gesetzlichen Grundlage. Dieses Recht wurde vom Bundesverfassungsgericht entwickelt und ist Ausfluss der Menschenwürde und des allgemeinen Persönlichkeitsrechts.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bverfg_1_bvr_276_17",
+        "text": "Das Grundrecht auf informationelle Selbstbestimmung gewährleistet die Befugnis des Einzelnen, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Einschränkungen dieses Rechts bedürfen einer verfassungsgemäßen gesetzlichen Grundlage, aus der sich die Voraussetzungen und der Umfang der Beschränkungen klar und für den Bürger erkennbar ergeben.",
+        "score": 0.94
+      },
+      {
+        "source_id": "gg_1",
+        "text": "Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.",
+        "score": 0.62
+      }
+    ]
+  },
+  {
+    "id": "a015",
+    "query_id": "q014",
+    "generated_answer": "Eine Werbung ist nach § 5 UWG irreführend, wenn sie geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er andernfalls nicht getroffen hätte. Dabei ist auf die Wahrnehmung des durchschnittlich informierten, aufmerksamen und verständigen Durchschnittsverbrauchers abzustellen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_i_zr_250_19",
+        "text": "Eine Werbung ist irreführend im Sinne von § 5 UWG, wenn sie geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er andernfalls nicht getroffen hätte. Dabei ist auf die Wahrnehmung des durchschnittlich informierten, aufmerksamen und verständigen Durchschnittsverbrauchers abzustellen.",
+        "score": 0.98
+      }
+    ]
+  },
+  {
+    "id": "a016",
+    "query_id": "q015",
+    "generated_answer": "Ja, ein Arzt ist verpflichtet, Sie über alle wesentlichen Umstände der Behandlung aufzuklären, insbesondere über Risiken und Erfolgschancen. Die Aufklärung muss so rechtzeitig erfolgen, dass Sie Ihre Entscheidung wohlüberlegt treffen können. Bei elektiven Eingriffen ist eine Aufklärung am Vortag in der Regel zu spät.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_iv_zr_123_18",
+        "text": "Ein Arzt ist verpflichtet, den Patienten über alle wesentlichen Umstände der Behandlung aufzuklären, insbesondere über Risiken und Erfolgschancen. Die Aufklärung muss so rechtzeitig erfolgen, dass der Patient seine Entscheidung wohlüberlegt treffen kann. Bei elektiven Eingriffen ist eine Aufklärung am Vortag in der Regel zu spät.",
+        "score": 0.99
+      }
+    ]
+  },
+  {
+    "id": "a017",
+    "query_id": "q016",
+    "generated_answer": "Im Zugewinnausgleich nach § 1375 BGB wird das Endvermögen jedes Ehegatten festgestellt und mit dem Anfangsvermögen verglichen. Der Ehegatte mit dem höheren Zugewinn muss die Hälfte der Differenz an den anderen ausgleichen. Zur Berechnung gehören alle Vermögenswerte, auch künftige Rentenanwartschaften.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_xii_zr_89_17",
+        "text": "Im Zugewinnausgleich ist das Endvermögen jedes Ehegatten nach § 1375 BGB festzustellen und mit dem Anfangsvermögen zu vergleichen. Der Ehegatte mit dem höheren Zugewinn muss die Hälfte der Differenz an den anderen ausgleichen. Zur Berechnung gehören alle Vermögenswerte, auch künftige Rentenanwartschaften.",
+        "score": 0.97
+      }
+    ]
+  },
+  {
+    "id": "a018",
+    "query_id": "q017",
+    "generated_answer": "Wenn Ihr Vermieter die Wohnung nicht repariert, können Sie zunächst eine Frist zur Mängelbeseitigung setzen. Nach Ablauf der Frist können Sie die Miete mindern, Schadensersatz verlangen oder selbst die Mängel beseitigen lassen und Aufwendungsersatz verlangen. In schweren Fällen ist auch eine fristlose Kündigung möglich.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren. Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.",
+        "score": 0.78
+      },
+      {
+        "source_id": "bgh_viii_zr_70_20",
+        "text": "Eine Mietminderung nach § 536 BGB setzt voraus, dass die Mietsache einen Mangel aufweist, der ihre Tauglichkeit zum vertragsgemäßen Gebrauch aufhebt oder mindert.",
+        "score": 0.71
+      }
+    ]
+  },
+  {
+    "id": "a019",
+    "query_id": "q018",
+    "generated_answer": "Nein, Allgemeine Geschäftsbedingungen (AGB) sind nach § 307 BGB unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist. Außerdem müssen AGB nach § 305 BGB wirksam einbezogen werden.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "agb_307",
+        "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist.",
+        "score": 0.95
+      },
+      {
+        "source_id": "agb_305",
+        "text": "Allgemeine Geschäftsbedingungen sind alle für eine Vielzahl von Verträgen vorformulierten Vertragsbedingungen, die eine Vertragspartei (Verwender) der anderen Vertragspartei bei Abschluss eines Vertrags stellt.",
+        "score": 0.82
+      }
+    ]
+  },
+  {
+    "id": "a020",
+    "query_id": "q019",
+    "generated_answer": "Wenn kein Testament vorhanden ist, gilt die gesetzliche Erbfolge. Gesetzliche Erben der ersten Ordnung sind nach § 1924 BGB die Abkömmlinge des Erblassers. Ein zur Zeit des Erbfalls lebender Abkömmling schließt die durch ihn mit dem Erblasser verwandten Abkömmlinge von der Erbfolge aus. Sind keine Abkömmlinge vorhanden, erben die Verwandten der zweiten Ordnung.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_1924",
+        "text": "Gesetzliche Erben der ersten Ordnung sind die Abkömmlinge des Erblassers. Ein zur Zeit des Erbfalls lebender Abkömmling schließt die durch ihn mit dem Erblasser verwandten Abkömmlinge von der Erbfolge aus.",
+        "score": 0.93
+      },
+      {
+        "source_id": "bgb_1922",
+        "text": "Mit dem Tode einer Person (Erbfall) geht deren Vermögen (Erbschaft) als Ganzes auf eine oder mehrere andere Personen (Erben) über.",
+        "score": 0.81
+      }
+    ]
+  },
+  {
+    "id": "a021",
+    "query_id": "q020",
+    "generated_answer": "Ein Werkvertrag nach § 631 BGB verpflichtet den Unternehmer zur Herstellung eines versprochenen Werkes, während ein Dienstvertrag nach § 611 BGB nur die Leistung der versprochenen Dienste zum Gegenstand hat. Der Unterschied liegt im Erfolg: Beim Werkvertrag schuldet der Unternehmer einen Erfolg, beim Dienstvertrag nur die Tätigkeit an sich.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_631",
+        "text": "Durch den Werkvertrag wird der Unternehmer zur Herstellung des versprochenen Werkes, der Besteller zur Entrichtung der vereinbarten Vergütung verpflichtet.",
+        "score": 0.89
+      },
+      {
+        "source_id": "bgb_611",
+        "text": "Durch den Dienstvertrag wird derjenige, welcher Dienste zusagt, zur Leistung der versprochenen Dienste, der andere Teil zur Gewährung der vereinbarten Vergütung verpflichtet.",
+        "score": 0.88
+      }
+    ]
+  },
+  {
+    "id": "a022",
+    "query_id": "q021",
+    "generated_answer": "Ja, nach der Datenschutz-Grundverordnung (DSGVO) haben Sie ein Recht auf Löschung Ihrer personenbezogenen Daten. Dieses Recht besteht unter bestimmten Voraussetzungen, beispielsweise wenn die Daten für die Zwecke, für die sie erhoben wurden, nicht mehr notwendig sind oder wenn Sie Ihre Einwilligung widerrufen haben. Es gibt jedoch Ausnahmen, etwa zur Erfüllung rechtlicher Verpflichtungen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "eugh_c_311_18",
+        "text": "Die Datenschutz-Grundverordnung (DSGVO) gewährt betroffenen Personen umfassende Rechte in Bezug auf ihre personenbezogenen Daten. Dazu gehört das Recht auf Auskunft, Berichtigung und Löschung.",
+        "score": 0.87
+      }
+    ]
+  },
+  {
+    "id": "a023",
+    "query_id": "q022",
+    "generated_answer": "Diebstahl nach § 242 StGB liegt vor, wenn jemand eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen. Betrug nach § 263 StGB erfordert hingegen die Täuschung einer Person, die dadurch in einen Irrtum gerät und eine Vermögensverfügung vornimmt, wodurch ihr Vermögen beschädigt wird. Der Hauptunterschied liegt also in der Art der Erlangung.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "stgb_242",
+        "text": "Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+        "score": 0.91
+      },
+      {
+        "source_id": "stgb_263",
+        "text": "Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, dass er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+        "score": 0.88
+      }
+    ]
+  },
+  {
+    "id": "a024",
+    "query_id": "q023",
+    "generated_answer": "Nach § 91 ZPO hat die unterliegende Partei die Kosten des Rechtsstreits zu tragen, insbesondere die dem Gegner erwachsenen Kosten zu erstatten, soweit sie zur zweckentsprechenden Rechtsverfolgung oder Rechtsverteidigung notwendig waren. Dies umfasst Gerichtskosten und Anwaltskosten.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "zpo_91",
+        "text": "Die unterliegende Partei hat die Kosten des Rechtsstreits zu tragen, insbesondere die dem Gegner erwachsenen Kosten zu erstatten, soweit sie zur zweckentsprechenden Rechtsverfolgung oder Rechtsverteidigung notwendig waren.",
+        "score": 0.96
+      }
+    ]
+  },
+  {
+    "id": "a025",
+    "query_id": "q024",
+    "generated_answer": "Nach § 238 HGB ist jeder Kaufmann verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen. Die Buchführung muss so beschaffen sein, dass sie einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über die Geschäftsvorfälle und über die Lage des Unternehmens vermitteln kann.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_238",
+        "text": "Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen. Die Buchführung muss so beschaffen sein, dass sie einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über die Geschäftsvorfälle und über die Lage des Unternehmens vermitteln kann.",
+        "score": 0.99
+      }
+    ]
+  },
+  {
+    "id": "a026",
+    "query_id": "q025",
+    "generated_answer": "Ja, ein Nachbar kann sich gegen eine Baugenehmigung zur Wehr setzen, wenn diese gegen drittschützende Vorschriften des Baurechts verstößt. Dazu gehören insbesondere Abstandsflächenvorschriften und Regelungen über die Art der baulichen Nutzung. Der Nachbar muss in seinen Rechten verletzt sein.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bverwg_6_c_12_19",
+        "text": "Ein Nachbar kann sich gegen eine Baugenehmigung zur Wehr setzen, wenn diese gegen drittschützende Vorschriften des Baurechts verstößt. Dazu gehören insbesondere Abstandsflächenvorschriften und Regelungen über die Art der baulichen Nutzung. Der Nachbar muss in seinen Rechten verletzt sein.",
+        "score": 0.99
+      }
+    ]
+  },
+  {
+    "id": "a027_hallucination",
+    "query_id": "q001",
+    "generated_answer": "Nach §823 BGB haftet nur bei grober Fahrlässigkeit oder Vorsatz. Bei einfacher Fahrlässigkeit gibt es grundsätzlich keine Haftung. Außerdem muss der Geschädigte einen Verschuldensnachweis erbringen. Die Beweislast liegt immer beim Geschädigten, nie beim Schädiger.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.54
+      }
+    ]
+  },
+  {
+    "id": "a028_hallucination",
+    "query_id": "q003",
+    "generated_answer": "Bei Mängeln der Wohnung kann der Mieter sofort ohne Ankündigung die Miete um bis zu 50% mindern. Eine vorherige Anzeige beim Vermieter ist nicht erforderlich. Außerdem hat der Mieter immer ein Sonderkündigungsrecht bei jedem Mangel, egal wie geringfügig.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren.",
+        "score": 0.42
+      },
+      {
+        "source_id": "bgh_viii_zr_70_20",
+        "text": "Eine Mietminderung nach § 536 BGB setzt voraus, dass die Mietsache einen Mangel aufweist, der ihre Tauglichkeit zum vertragsgemäßen Gebrauch aufhebt oder mindert.",
+        "score": 0.61
+      }
+    ]
+  },
+  {
+    "id": "a029_partial",
+    "query_id": "q004",
+    "generated_answer": "Beim Kaufvertrag haben Sie bei Mängeln zunächst Anspruch auf Nacherfüllung. Der Verkäufer muss die Sache reparieren oder eine neue liefern. Sie können auch sofort Schadensersatz statt der Leistung verlangen und zusätzlich ein Rücktrittsrecht geltend machen, ohne vorher Nacherfüllung zu verlangen.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_433",
+        "text": "Durch den Kaufvertrag wird der Verkäufer einer Sache verpflichtet, dem Käufer die Sache zu übergeben und das Eigentum an der Sache zu verschaffen. Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+        "score": 0.76
+      }
+    ]
+  },
+  {
+    "id": "a030_partial",
+    "query_id": "q005",
+    "generated_answer": "Eine betriebsbedingte Kündigung erfordert dringende betriebliche Erfordernisse. Der Arbeitgeber muss nachweisen, dass der Arbeitsplatz dauerhaft entfällt. Eine Sozialauswahl ist immer durchzuführen. Auch Kleinbetriebe mit weniger als 10 Mitarbeitern unterliegen den gleichen Kündigungsschutzregeln.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bag_2_azr_412_19",
+        "text": "Eine betriebsbedingte Kündigung ist nur dann sozial gerechtfertigt, wenn das Beschäftigungsbedürfnis weggefallen ist und eine Weiterbeschäftigung an einem anderen Arbeitsplatz nicht möglich ist.",
+        "score": 0.73
+      }
+    ]
+  },
+  {
+    "id": "a031_hallucination",
+    "query_id": "q006",
+    "generated_answer": "Das Schmerzensgeld wird nach § 253 BGB berechnet und beträgt mindestens 5.000 Euro pro Verletzung. Es gibt gesetzlich festgelegte Tabellen für jede Art von Verletzung. Bei einer einfachen Prellung sind es 2.000 Euro, bei einem Knochenbruch mindestens 10.000 Euro.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_vi_zr_223_17",
+        "text": "Das Schmerzensgeld nach § 253 Abs. 2 BGB soll einen angemessenen Ausgleich für erlittene immaterielle Schäden bieten. Bei der Bemessung sind Art und Schwere der Verletzung, Dauer und Intensität der Schmerzen sowie die Beeinträchtigung der Lebensführung zu berücksichtigen.",
+        "score": 0.58
+      }
+    ]
+  },
+  {
+    "id": "a032_verified",
+    "query_id": "q007",
+    "generated_answer": "Geschäftsführer einer GmbH müssen die Sorgfalt eines ordentlichen Geschäftsmannes anwenden. Nach § 43 Abs. 2 GmbHG haften sie der Gesellschaft zum Schadensersatz bei Pflichtverletzungen. Besonders wichtig ist die rechtzeitige Insolvenzanmeldung bei drohender Zahlungsunfähigkeit, da ein Verstoß zu persönlicher Haftung führt.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_ii_zr_83_19",
+        "text": "Die Geschäftsführer einer GmbH haften der Gesellschaft nach § 43 Abs. 2 GmbHG zum Schadensersatz, wenn sie ihre Sorgfaltspflichten verletzen. Dazu gehört insbesondere die Pflicht, bei drohender Zahlungsunfähigkeit rechtzeitig Insolvenzantrag zu stellen.",
+        "score": 0.94
+      }
+    ]
+  },
+  {
+    "id": "a033_verified",
+    "query_id": "q008",
+    "generated_answer": "Treu und Glauben ist ein zentraler Grundsatz des deutschen Privatrechts, verankert in § 242 BGB. Er verpflichtet den Schuldner, die Leistung so zu bewirken, wie es Treu und Glauben mit Rücksicht auf die Verkehrssitte erfordern. Auch bei der Vertragsauslegung nach § 157 BGB spielt dieser Grundsatz eine wesentliche Rolle.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_242",
+        "text": "Der Schuldner ist verpflichtet, die Leistung so zu bewirken, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+        "score": 0.92
+      },
+      {
+        "source_id": "bgb_157",
+        "text": "Verträge sind so auszulegen, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+        "score": 0.90
+      }
+    ]
+  },
+  {
+    "id": "a034_hallucination",
+    "query_id": "q009",
+    "generated_answer": "Ein Testament kann nur innerhalb von 6 Monaten nach dem Erbfall angefochten werden. Die Anfechtung muss beim Nachlassgericht eingereicht werden und kostet eine Gebühr von mindestens 500 Euro. Ohne diese Gebühr ist die Anfechtung automatisch unwirksam.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_1922",
+        "text": "Mit dem Tode einer Person (Erbfall) geht deren Vermögen (Erbschaft) als Ganzes auf eine oder mehrere andere Personen (Erben) über.",
+        "score": 0.38
+      }
+    ]
+  },
+  {
+    "id": "a035_verified",
+    "query_id": "q011",
+    "generated_answer": "Eine offene Handelsgesellschaft (OHG) ist gemäß § 105 HGB eine Personengesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist. Das Besondere: Bei keinem der Gesellschafter ist die Haftung gegenüber Gläubigern beschränkt - alle haften unbeschränkt mit ihrem gesamten Vermögen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_105",
+        "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine offene Handelsgesellschaft, wenn bei keinem der Gesellschafter die Haftung gegenüber den Gesellschaftsgläubigern beschränkt ist.",
+        "score": 0.95
+      }
+    ]
+  },
+  {
+    "id": "a036_partial",
+    "query_id": "q012",
+    "generated_answer": "Bei Online-Käufen und Haustürgeschäften haben Verbraucher ein Widerrufsrecht von 14 Tagen nach § 312g BGB. Die Frist beginnt mit Erhalt der Ware. Der Widerruf muss schriftlich per Brief erfolgen - eine E-Mail reicht nicht aus. Versandkosten muss immer der Verkäufer tragen.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "olg_frankfurt_6_u_123_19",
+        "text": "Bei Verträgen, die außerhalb von Geschäftsräumen geschlossen werden, steht dem Verbraucher nach § 312g BGB ein Widerrufsrecht zu. Der Unternehmer muss über dieses Recht ordnungsgemäß belehren.",
+        "score": 0.79
+      }
+    ]
+  },
+  {
+    "id": "a037_verified",
+    "query_id": "q013",
+    "generated_answer": "Das Recht auf informationelle Selbstbestimmung ist ein vom Bundesverfassungsgericht entwickeltes Grundrecht. Es gibt jedem Einzelnen die Befugnis, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Einschränkungen sind nur aufgrund eines Gesetzes möglich, das klar und für den Bürger erkennbar sein muss.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bverfg_1_bvr_276_17",
+        "text": "Das Grundrecht auf informationelle Selbstbestimmung gewährleistet die Befugnis des Einzelnen, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Einschränkungen dieses Rechts bedürfen einer verfassungsgemäßen gesetzlichen Grundlage.",
+        "score": 0.96
+      }
+    ]
+  },
+  {
+    "id": "a038_verified",
+    "query_id": "q014",
+    "generated_answer": "Nach § 5 UWG ist eine Werbung irreführend, wenn sie geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er ohne die Täuschung nicht getroffen hätte. Maßstab ist der durchschnittlich informierte, aufmerksame und verständige Durchschnittsverbraucher.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_i_zr_250_19",
+        "text": "Eine Werbung ist irreführend im Sinne von § 5 UWG, wenn sie geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er andernfalls nicht getroffen hätte. Dabei ist auf die Wahrnehmung des durchschnittlich informierten, aufmerksamen und verständigen Durchschnittsverbrauchers abzustellen.",
+        "score": 0.97
+      }
+    ]
+  },
+  {
+    "id": "a039_hallucination",
+    "query_id": "q015",
+    "generated_answer": "Ärzte müssen Patienten nur bei besonders risikoreichen Eingriffen aufklären. Bei Routineoperationen ist keine Aufklärung erforderlich. Die Aufklärung kann auch unmittelbar vor der Operation erfolgen. Ein schriftliches Aufklärungsformular ersetzt das persönliche Gespräch vollständig.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_iv_zr_123_18",
+        "text": "Ein Arzt ist verpflichtet, den Patienten über alle wesentlichen Umstände der Behandlung aufzuklären, insbesondere über Risiken und Erfolgschancen. Die Aufklärung muss so rechtzeitig erfolgen, dass der Patient seine Entscheidung wohlüberlegt treffen kann.",
+        "score": 0.63
+      }
+    ]
+  },
+  {
+    "id": "a040_verified",
+    "query_id": "q016",
+    "generated_answer": "Der Zugewinnausgleich nach § 1375 BGB erfolgt durch Vergleich des Endvermögens mit dem Anfangsvermögen beider Ehegatten. Der Ehegatte mit dem höheren Zugewinn muss die Hälfte der Differenz an den anderen zahlen. Alle Vermögenswerte zählen mit, einschließlich Rentenanwartschaften.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgh_xii_zr_89_17",
+        "text": "Im Zugewinnausgleich ist das Endvermögen jedes Ehegatten nach § 1375 BGB festzustellen und mit dem Anfangsvermögen zu vergleichen. Der Ehegatte mit dem höheren Zugewinn muss die Hälfte der Differenz an den anderen ausgleichen. Zur Berechnung gehören alle Vermögenswerte, auch künftige Rentenanwartschaften.",
+        "score": 0.98
+      }
+    ]
+  },
+  {
+    "id": "a041_partial",
+    "query_id": "q017",
+    "generated_answer": "Wenn der Vermieter nicht repariert, können Sie die Miete mindern und nach Fristsetzung auch Schadensersatz verlangen. Sie dürfen die Reparatur selbst in Auftrag geben und dem Vermieter die Rechnung schicken. In Notfällen ist sogar eine sofortige Beauftragung ohne Frist möglich.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.",
+        "score": 0.74
+      }
+    ]
+  },
+  {
+    "id": "a042_verified",
+    "query_id": "q018",
+    "generated_answer": "Nein, AGB sind nach § 307 BGB unwirksam, wenn sie den Vertragspartner entgegen Treu und Glauben unangemessen benachteiligen. Auch unklare Bestimmungen sind unwirksam. Zudem müssen AGB nach § 305 BGB wirksam einbezogen werden - der Verwender muss ausdrücklich darauf hinweisen und dem anderen die Möglichkeit geben, vom Inhalt Kenntnis zu nehmen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "agb_307",
+        "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist.",
+        "score": 0.93
+      },
+      {
+        "source_id": "agb_305",
+        "text": "Allgemeine Geschäftsbedingungen werden nur dann Bestandteil eines Vertrags, wenn der Verwender bei Vertragsschluss die andere Vertragspartei ausdrücklich oder durch Aushang am Ort des Vertragsschlusses auf sie hinweist und der anderen Vertragspartei die Möglichkeit verschafft, in zumutbarer Weise von ihrem Inhalt Kenntnis zu nehmen.",
+        "score": 0.89
+      }
+    ]
+  },
+  {
+    "id": "a043_verified",
+    "query_id": "q019",
+    "generated_answer": "Ohne Testament gilt die gesetzliche Erbfolge nach §§ 1924 ff. BGB. Erben erster Ordnung sind die Abkömmlinge (Kinder, Enkel). Ein lebender Abkömmling schließt die durch ihn mit dem Erblasser verwandten Abkömmlinge aus. Gibt es keine Abkömmlinge, erben die Verwandten der zweiten Ordnung (Eltern, Geschwister).",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_1924",
+        "text": "Gesetzliche Erben der ersten Ordnung sind die Abkömmlinge des Erblassers. Ein zur Zeit des Erbfalls lebender Abkömmling schließt die durch ihn mit dem Erblasser verwandten Abkömmlinge von der Erbfolge aus.",
+        "score": 0.94
+      },
+      {
+        "source_id": "bgb_1922",
+        "text": "Mit dem Tode einer Person (Erbfall) geht deren Vermögen (Erbschaft) als Ganzes auf eine oder mehrere andere Personen (Erben) über.",
+        "score": 0.83
+      }
+    ]
+  },
+  {
+    "id": "a044_verified",
+    "query_id": "q020",
+    "generated_answer": "Der Werkvertrag (§ 631 BGB) verpflichtet zur Herstellung eines versprochenen Werkes, also eines konkreten Erfolgs. Der Dienstvertrag (§ 611 BGB) verpflichtet nur zur Leistung der Dienste, nicht zum Erfolg. Beim Werkvertrag schuldet man ein Ergebnis, beim Dienstvertrag nur die Tätigkeit.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_631",
+        "text": "Durch den Werkvertrag wird der Unternehmer zur Herstellung des versprochenen Werkes, der Besteller zur Entrichtung der vereinbarten Vergütung verpflichtet.",
+        "score": 0.91
+      },
+      {
+        "source_id": "bgb_611",
+        "text": "Durch den Dienstvertrag wird derjenige, welcher Dienste zusagt, zur Leistung der versprochenen Dienste, der andere Teil zur Gewährung der vereinbarten Vergütung verpflichtet.",
+        "score": 0.87
+      }
+    ]
+  },
+  {
+    "id": "a045_verified",
+    "query_id": "q021",
+    "generated_answer": "Ja, die DSGVO gewährt ein Recht auf Löschung personenbezogener Daten. Dieses Recht besteht unter bestimmten Voraussetzungen, etwa wenn die Daten nicht mehr notwendig sind oder wenn Sie Ihre Einwilligung widerrufen. Ausnahmen gelten zum Beispiel bei rechtlichen Aufbewahrungspflichten.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "eugh_c_311_18",
+        "text": "Die Datenschutz-Grundverordnung (DSGVO) gewährt betroffenen Personen umfassende Rechte in Bezug auf ihre personenbezogenen Daten. Dazu gehört das Recht auf Auskunft, Berichtigung und Löschung.",
+        "score": 0.89
+      }
+    ]
+  },
+  {
+    "id": "a046_hallucination",
+    "query_id": "q022",
+    "generated_answer": "Diebstahl und Betrug sind im Grunde dasselbe - beide beziehen sich auf die rechtswidrige Aneignung fremden Eigentums. Der einzige Unterschied ist die Höhe der Strafe: Diebstahl wird mit bis zu 3 Jahren bestraft, Betrug mit bis zu 7 Jahren.",
+    "expected_confidence": "low",
+    "expected_label": "rejected",
+    "retrieved_snippets": [
+      {
+        "source_id": "stgb_242",
+        "text": "Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+        "score": 0.52
+      },
+      {
+        "source_id": "stgb_263",
+        "text": "Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, dass er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+        "score": 0.49
+      }
+    ]
+  },
+  {
+    "id": "a047_verified",
+    "query_id": "q023",
+    "generated_answer": "Nach § 91 ZPO trägt die unterliegende Partei die Kosten des Rechtsstreits. Sie muss dem Gegner die Kosten erstatten, soweit diese zur zweckentsprechenden Rechtsverfolgung oder Rechtsverteidigung notwendig waren. Dazu gehören Gerichtskosten und Anwaltskosten.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "zpo_91",
+        "text": "Die unterliegende Partei hat die Kosten des Rechtsstreits zu tragen, insbesondere die dem Gegner erwachsenen Kosten zu erstatten, soweit sie zur zweckentsprechenden Rechtsverfolgung oder Rechtsverteidigung notwendig waren.",
+        "score": 0.97
+      }
+    ]
+  },
+  {
+    "id": "a048_verified",
+    "query_id": "q024",
+    "generated_answer": "Nach § 238 HGB muss jeder Kaufmann Bücher führen und darin seine Handelsgeschäfte sowie die Vermögenslage nach den Grundsätzen ordnungsmäßiger Buchführung darstellen. Die Buchführung muss einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über Geschäftsvorfälle und Unternehmenslage ermöglichen.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_238",
+        "text": "Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen. Die Buchführung muss so beschaffen sein, dass sie einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über die Geschäftsvorfälle und über die Lage des Unternehmens vermitteln kann.",
+        "score": 0.98
+      }
+    ]
+  },
+  {
+    "id": "a049_verified",
+    "query_id": "q025",
+    "generated_answer": "Ja, ein Nachbar kann gegen eine Baugenehmigung vorgehen, wenn diese drittschützende Vorschriften des Baurechts verletzt. Dazu zählen insbesondere Abstandsflächenvorschriften und Regelungen zur Art der baulichen Nutzung. Voraussetzung ist, dass der Nachbar in eigenen Rechten verletzt ist.",
+    "expected_confidence": "high",
+    "expected_label": "verified",
+    "retrieved_snippets": [
+      {
+        "source_id": "bverwg_6_c_12_19",
+        "text": "Ein Nachbar kann sich gegen eine Baugenehmigung zur Wehr setzen, wenn diese gegen drittschützende Vorschriften des Baurechts verstößt. Dazu gehören insbesondere Abstandsflächenvorschriften und Regelungen über die Art der baulichen Nutzung. Der Nachbar muss in seinen Rechten verletzt sein.",
+        "score": 0.99
+      }
+    ]
+  },
+  {
+    "id": "a050_mixed",
+    "query_id": "q001",
+    "generated_answer": "Nach §823 BGB haftet, wer vorsätzlich oder fahrlässig ein geschütztes Rechtsgut verletzt. Zu den geschützten Rechtsgütern gehören Leben, Körper, Gesundheit, Freiheit und Eigentum. Der Schädiger muss immer einen Anwalt einschalten, bevor er Schadensersatz leisten kann. Die Verjährungsfrist beträgt grundsätzlich 30 Jahre.",
+    "expected_confidence": "medium",
+    "expected_label": "review",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.84
+      }
+    ]
+  }
+]

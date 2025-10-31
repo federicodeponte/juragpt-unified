@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bgb_823_1",
+    "title": "§ 823 Abs. 1 BGB Schadensersatzpflicht",
+    "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__823.html",
+    "category": "civil_law",
+    "area": "tort_law"
+  },
+  {
+    "id": "bgb_276",
+    "title": "§ 276 BGB Verantwortlichkeit des Schuldners",
+    "text": "Der Schuldner hat Vorsatz und Fahrlässigkeit zu vertreten, sofern nicht ein anderes bestimmt ist. Fahrlässig handelt, wer die im Verkehr erforderliche Sorgfalt außer Acht lässt.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__276.html",
+    "category": "civil_law",
+    "area": "obligations"
+  },
+  {
+    "id": "bgb_433",
+    "title": "§ 433 BGB Vertragstypische Pflichten beim Kaufvertrag",
+    "text": "Durch den Kaufvertrag wird der Verkäufer einer Sache verpflichtet, dem Käufer die Sache zu übergeben und das Eigentum an der Sache zu verschaffen. Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__433.html",
+    "category": "civil_law",
+    "area": "sales_law"
+  },
+  {
+    "id": "bgb_535",
+    "title": "§ 535 BGB Inhalt und Hauptpflichten des Mietvertrags",
+    "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren. Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__535.html",
+    "category": "civil_law",
+    "area": "rental_law"
+  },
+  {
+    "id": "bgb_242",
+    "title": "§ 242 BGB Leistung nach Treu und Glauben",
+    "text": "Der Schuldner ist verpflichtet, die Leistung so zu bewirken, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__242.html",
+    "category": "civil_law",
+    "area": "general_principles"
+  },
+  {
+    "id": "bgb_133",
+    "title": "§ 133 BGB Auslegung einer Willenserklärung",
+    "text": "Bei der Auslegung einer Willenserklärung ist der wirkliche Wille zu erforschen und nicht an dem buchstäblichen Sinne des Ausdrucks zu haften.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__133.html",
+    "category": "civil_law",
+    "area": "general_principles"
+  },
+  {
+    "id": "bgb_157",
+    "title": "§ 157 BGB Auslegung von Verträgen",
+    "text": "Verträge sind so auszulegen, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__157.html",
+    "category": "civil_law",
+    "area": "contract_law"
+  },
+  {
+    "id": "bgb_611",
+    "title": "§ 611 BGB Vertragstypische Pflichten beim Dienstvertrag",
+    "text": "Durch den Dienstvertrag wird derjenige, welcher Dienste zusagt, zur Leistung der versprochenen Dienste, der andere Teil zur Gewährung der vereinbarten Vergütung verpflichtet.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__611.html",
+    "category": "civil_law",
+    "area": "labor_law"
+  },
+  {
+    "id": "bgb_631",
+    "title": "§ 631 BGB Vertragstypische Pflichten beim Werkvertrag",
+    "text": "Durch den Werkvertrag wird der Unternehmer zur Herstellung des versprochenen Werkes, der Besteller zur Entrichtung der vereinbarten Vergütung verpflichtet.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__631.html",
+    "category": "civil_law",
+    "area": "contract_law"
+  },
+  {
+    "id": "bgb_812",
+    "title": "§ 812 BGB Herausgabeanspruch",
+    "text": "Wer durch die Leistung eines anderen oder in sonstiger Weise auf dessen Kosten etwas ohne rechtlichen Grund erlangt, ist ihm zur Herausgabe verpflichtet. Diese Verpflichtung besteht auch dann, wenn der rechtliche Grund später wegfällt oder der mit einer Leistung nach dem Inhalt des Rechtsgeschäfts bezweckte Erfolg nicht eintritt.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__812.html",
+    "category": "civil_law",
+    "area": "unjust_enrichment"
+  },
+  {
+    "id": "stgb_223",
+    "title": "§ 223 StGB Körperverletzung",
+    "text": "Wer eine andere Person körperlich misshandelt oder an der Gesundheit schädigt, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+    "source": "https://www.gesetze-im-internet.de/stgb/__223.html",
+    "category": "criminal_law",
+    "area": "bodily_harm"
+  },
+  {
+    "id": "stgb_242",
+    "title": "§ 242 StGB Diebstahl",
+    "text": "Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+    "source": "https://www.gesetze-im-internet.de/stgb/__242.html",
+    "category": "criminal_law",
+    "area": "property_crimes"
+  },
+  {
+    "id": "stgb_263",
+    "title": "§ 263 StGB Betrug",
+    "text": "Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, dass er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+    "source": "https://www.gesetze-im-internet.de/stgb/__263.html",
+    "category": "criminal_law",
+    "area": "fraud"
+  },
+  {
+    "id": "stgb_15",
+    "title": "§ 15 StGB Vorsätzliches und fahrlässiges Handeln",
+    "text": "Strafbar ist nur vorsätzliches Handeln, wenn nicht das Gesetz fahrlässiges Handeln ausdrücklich mit Strafe bedroht.",
+    "source": "https://www.gesetze-im-internet.de/stgb/__15.html",
+    "category": "criminal_law",
+    "area": "general_principles"
+  },
+  {
+    "id": "stgb_16",
+    "title": "§ 16 StGB Irrtum über Tatumstände",
+    "text": "Wer bei Begehung der Tat einen Umstand nicht kennt, der zum gesetzlichen Tatbestand gehört, handelt nicht vorsätzlich. Die Strafbarkeit wegen fahrlässiger Begehung bleibt unberührt.",
+    "source": "https://www.gesetze-im-internet.de/stgb/__16.html",
+    "category": "criminal_law",
+    "area": "general_principles"
+  },
+  {
+    "id": "gg_1",
+    "title": "Art. 1 GG Menschenwürde",
+    "text": "Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt. Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_1.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "gg_2",
+    "title": "Art. 2 GG Persönliche Freiheitsrechte",
+    "text": "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit, soweit er nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt. Jeder hat das Recht auf Leben und körperliche Unversehrtheit. Die Freiheit der Person ist unverletzlich.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_2.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "gg_3",
+    "title": "Art. 3 GG Gleichheit vor dem Gesetz",
+    "text": "Alle Menschen sind vor dem Gesetz gleich. Männer und Frauen sind gleichberechtigt. Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin. Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_3.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "gg_5",
+    "title": "Art. 5 GG Meinungsfreiheit",
+    "text": "Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten. Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet. Eine Zensur findet nicht statt.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_5.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "gg_12",
+    "title": "Art. 12 GG Berufsfreiheit",
+    "text": "Alle Deutschen haben das Recht, Beruf, Arbeitsplatz und Ausbildungsstätte frei zu wählen. Die Berufsausübung kann durch Gesetz oder auf Grund eines Gesetzes geregelt werden.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_12.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "gg_14",
+    "title": "Art. 14 GG Eigentum",
+    "text": "Das Eigentum und das Erbrecht werden gewährleistet. Inhalt und Schranken werden durch die Gesetze bestimmt. Eigentum verpflichtet. Sein Gebrauch soll zugleich dem Wohle der Allgemeinheit dienen.",
+    "source": "https://www.gesetze-im-internet.de/gg/art_14.html",
+    "category": "constitutional_law",
+    "area": "fundamental_rights"
+  },
+  {
+    "id": "zpo_253",
+    "title": "§ 253 ZPO Klageschrift",
+    "text": "Die Erhebung der Klage erfolgt durch Zustellung eines Schriftsatzes (Klageschrift). Die Klageschrift muss enthalten: die Bezeichnung der Parteien und des Gerichts, die bestimmte Angabe des Gegenstandes und des Grundes des erhobenen Anspruchs, sowie einen bestimmten Antrag.",
+    "source": "https://www.gesetze-im-internet.de/zpo/__253.html",
+    "category": "procedural_law",
+    "area": "civil_procedure"
+  },
+  {
+    "id": "zpo_286",
+    "title": "§ 286 ZPO Freie Beweiswürdigung",
+    "text": "Das Gericht hat unter Berücksichtigung des gesamten Inhalts der Verhandlungen und des Ergebnisses einer etwaigen Beweisaufnahme nach freier Überzeugung zu entscheiden, ob eine tatsächliche Behauptung für wahr oder für nicht wahr zu erachten ist.",
+    "source": "https://www.gesetze-im-internet.de/zpo/__286.html",
+    "category": "procedural_law",
+    "area": "evidence"
+  },
+  {
+    "id": "zpo_91",
+    "title": "§ 91 ZPO Kosten bei Obsiegen",
+    "text": "Die unterliegende Partei hat die Kosten des Rechtsstreits zu tragen, insbesondere die dem Gegner erwachsenen Kosten zu erstatten, soweit sie zur zweckentsprechenden Rechtsverfolgung oder Rechtsverteidigung notwendig waren.",
+    "source": "https://www.gesetze-im-internet.de/zpo/__91.html",
+    "category": "procedural_law",
+    "area": "costs"
+  },
+  {
+    "id": "hgb_1",
+    "title": "§ 1 HGB Kaufmann",
+    "text": "Kaufmann im Sinne dieses Gesetzbuchs ist, wer ein Handelsgewerbe betreibt. Handelsgewerbe ist jeder Gewerbebetrieb, es sei denn, dass das Unternehmen nach Art oder Umfang einen in kaufmännischer Weise eingerichteten Geschäftsbetrieb nicht erfordert.",
+    "source": "https://www.gesetze-im-internet.de/hgb/__1.html",
+    "category": "commercial_law",
+    "area": "merchant_law"
+  },
+  {
+    "id": "hgb_105",
+    "title": "§ 105 HGB Offene Handelsgesellschaft",
+    "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine offene Handelsgesellschaft, wenn bei keinem der Gesellschafter die Haftung gegenüber den Gesellschaftsgläubigern beschränkt ist.",
+    "source": "https://www.gesetze-im-internet.de/hgb/__105.html",
+    "category": "commercial_law",
+    "area": "partnership_law"
+  },
+  {
+    "id": "hgb_161",
+    "title": "§ 161 HGB Kommanditgesellschaft",
+    "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine Kommanditgesellschaft, wenn bei einem oder bei einigen von den Gesellschaftern die Haftung gegenüber den Gesellschaftsgläubigern auf den Betrag einer bestimmten Vermögenseinlage beschränkt ist (Kommanditisten), während bei dem anderen Teil der Gesellschafter eine Beschränkung der Haftung nicht stattfindet (persönlich haftende Gesellschafter).",
+    "source": "https://www.gesetze-im-internet.de/hgb/__161.html",
+    "category": "commercial_law",
+    "area": "partnership_law"
+  },
+  {
+    "id": "hgb_238",
+    "title": "§ 238 HGB Buchführungspflicht",
+    "text": "Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen. Die Buchführung muss so beschaffen sein, dass sie einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über die Geschäftsvorfälle und über die Lage des Unternehmens vermitteln kann.",
+    "source": "https://www.gesetze-im-internet.de/hgb/__238.html",
+    "category": "commercial_law",
+    "area": "accounting"
+  },
+  {
+    "id": "agb_305",
+    "title": "§ 305 BGB Einbeziehung Allgemeiner Geschäftsbedingungen",
+    "text": "Allgemeine Geschäftsbedingungen sind alle für eine Vielzahl von Verträgen vorformulierten Vertragsbedingungen, die eine Vertragspartei (Verwender) der anderen Vertragspartei bei Abschluss eines Vertrags stellt. Allgemeine Geschäftsbedingungen werden nur dann Bestandteil eines Vertrags, wenn der Verwender bei Vertragsschluss die andere Vertragspartei ausdrücklich oder durch Aushang am Ort des Vertragsschlusses auf sie hinweist und der anderen Vertragspartei die Möglichkeit verschafft, in zumutbarer Weise von ihrem Inhalt Kenntnis zu nehmen, und die andere Vertragspartei mit ihrer Geltung einverstanden ist.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__305.html",
+    "category": "civil_law",
+    "area": "agb"
+  },
+  {
+    "id": "agb_307",
+    "title": "§ 307 BGB Inhaltskontrolle",
+    "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__307.html",
+    "category": "civil_law",
+    "area": "agb"
+  },
+  {
+    "id": "bgb_1922",
+    "title": "§ 1922 BGB Gesamtrechtsnachfolge",
+    "text": "Mit dem Tode einer Person (Erbfall) geht deren Vermögen (Erbschaft) als Ganzes auf eine oder mehrere andere Personen (Erben) über.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__1922.html",
+    "category": "civil_law",
+    "area": "inheritance_law"
+  },
+  {
+    "id": "bgb_1924",
+    "title": "§ 1924 BGB Gesetzliche Erben erster Ordnung",
+    "text": "Gesetzliche Erben der ersten Ordnung sind die Abkömmlinge des Erblassers. Ein zur Zeit des Erbfalls lebender Abkömmling schließt die durch ihn mit dem Erblasser verwandten Abkömmlinge von der Erbfolge aus.",
+    "source": "https://www.gesetze-im-internet.de/bgb/__1924.html",
+    "category": "civil_law",
+    "area": "inheritance_law"
+  }
+]

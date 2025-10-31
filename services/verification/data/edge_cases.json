@@ -1,0 +1,235 @@
+[
+  {
+    "id": "edge_001_contradiction",
+    "scenario": "contradictory_sources",
+    "query": "Muss ich bei einer betriebsbedingten Kündigung vorher abgemahnt werden?",
+    "generated_answer": "Nein, bei einer betriebsbedingten Kündigung ist keine Abmahnung erforderlich, da das Fehlverhalten des Arbeitnehmers nicht der Kündigungsgrund ist. Anders als bei verhaltensbedingten Kündigungen liegt der Grund in betrieblichen Erfordernissen.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bag_2_azr_412_19",
+        "text": "Eine betriebsbedingte Kündigung ist nur dann sozial gerechtfertigt, wenn das Beschäftigungsbedürfnis weggefallen ist und eine Weiterbeschäftigung an einem anderen Arbeitsplatz nicht möglich ist.",
+        "score": 0.71
+      }
+    ],
+    "expected_behavior": "Should verify main statement but note missing explicit source for abmahnung claim",
+    "challenge": "Answer correct but partially inferred from general principles"
+  },
+  {
+    "id": "edge_002_outdated_law",
+    "scenario": "potentially_outdated",
+    "query": "Wie hoch ist der gesetzliche Mindestlohn?",
+    "generated_answer": "Der gesetzliche Mindestlohn beträgt aktuell 12 Euro pro Stunde und gilt für alle Arbeitnehmer in Deutschland.",
+    "retrieved_snippets": [],
+    "expected_behavior": "Should flag as low confidence due to no supporting sources",
+    "challenge": "Factually accurate but not in legal database"
+  },
+  {
+    "id": "edge_003_paraphrase",
+    "scenario": "heavy_paraphrasing",
+    "query": "Wer trägt die Beweislast bei einer Schadensersatzforderung?",
+    "generated_answer": "Grundsätzlich muss derjenige, der einen Anspruch geltend macht, die anspruchsbegründenden Tatsachen beweisen. Bei Schadensersatzansprüchen muss also der Geschädigte nachweisen, dass der Schädiger eine Rechtsverletzung begangen hat, dass ein Schaden entstanden ist und dass zwischen Rechtsverletzung und Schaden ein Kausalzusammenhang besteht.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.64
+      }
+    ],
+    "expected_behavior": "Should verify despite heavy paraphrasing",
+    "challenge": "Correct legal principle but highly rephrased"
+  },
+  {
+    "id": "edge_004_multiple_paragraphs",
+    "scenario": "multiple_legal_bases",
+    "query": "Welche Ansprüche hat ein Käufer bei einem mangelhaften Produkt?",
+    "generated_answer": "Bei einem mangelhaften Produkt hat der Käufer zunächst Anspruch auf Nacherfüllung nach § 439 BGB. Schlägt diese fehl, kann er nach § 437 BGB vom Vertrag zurücktreten oder den Kaufpreis mindern. Zusätzlich kann er nach § 280 BGB Schadensersatz verlangen, wenn der Verkäufer die Pflichtverletzung zu vertreten hat.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_433",
+        "text": "Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+        "score": 0.78
+      },
+      {
+        "source_id": "bgh_v_zr_235_19",
+        "text": "Ein Sachmangel liegt vor, wenn die Kaufsache bei Gefahrübergang nicht die vereinbarte Beschaffenheit hat.",
+        "score": 0.69
+      }
+    ],
+    "expected_behavior": "Should partially verify - sources support general concept but not specific §§",
+    "challenge": "Multiple legal bases cited but sources don't cover all"
+  },
+  {
+    "id": "edge_005_subtle_error",
+    "scenario": "subtle_misstatement",
+    "query": "Ab wann verjähren Schadensersatzansprüche?",
+    "generated_answer": "Schadensersatzansprüche verjähren grundsätzlich in fünf Jahren ab Kenntnis des Schadens und der Person des Schädigers. Spätestens verjähren sie aber nach 30 Jahren ab der Handlung.",
+    "retrieved_snippets": [],
+    "expected_behavior": "Should flag - incorrect timeframe (should be 3 years)",
+    "challenge": "Subtle numeric error in otherwise plausible answer"
+  },
+  {
+    "id": "edge_006_technical_term",
+    "scenario": "technical_terminology",
+    "query": "Was bedeutet 'konkludentes Handeln' im Vertragsrecht?",
+    "generated_answer": "Konkludentes Handeln bezeichnet ein Verhalten, aus dem nach den Umständen auf einen bestimmten Willen geschlossen werden kann, ohne dass dieser ausdrücklich erklärt wurde. Nach § 133 BGB ist bei der Auslegung einer Willenserklärung der wirkliche Wille zu erforschen und nicht am buchstäblichen Sinne zu haften.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_133",
+        "text": "Bei der Auslegung einer Willenserklärung ist der wirkliche Wille zu erforschen und nicht an dem buchstäblichen Sinne des Ausdrucks zu haften.",
+        "score": 0.82
+      }
+    ],
+    "expected_behavior": "Should verify - definition matches legal principle",
+    "challenge": "Technical term not explicitly defined in sources"
+  },
+  {
+    "id": "edge_007_negation",
+    "scenario": "negative_statement",
+    "query": "Muss ich als Mieter kleine Schönheitsreparaturen durchführen?",
+    "generated_answer": "Nein, die Pflicht zu Schönheitsreparaturen liegt grundsätzlich beim Vermieter. Nur wenn dies wirksam im Mietvertrag auf den Mieter übertragen wurde, ist dieser verpflichtet. Unwirksame Klauseln in Formularverträgen führen dazu, dass die Pflicht beim Vermieter verbleibt.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.",
+        "score": 0.75
+      },
+      {
+        "source_id": "agb_307",
+        "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen.",
+        "score": 0.68
+      }
+    ],
+    "expected_behavior": "Should verify with medium confidence - principle supported but specific ruling not in sources",
+    "challenge": "Negative statement with conditional logic"
+  },
+  {
+    "id": "edge_008_case_synthesis",
+    "scenario": "synthesized_from_multiple_cases",
+    "query": "Wie hat sich die Rechtsprechung zur Haftung bei Verkehrsunfällen entwickelt?",
+    "generated_answer": "Die Rechtsprechung hat über die Jahre klargestellt, dass nach § 823 BGB sowohl Vorsatz als auch einfache Fahrlässigkeit zur Haftung führen. Bei Verkehrsunfällen können Ansprüche auf Schadensersatz, Schmerzensgeld und Nutzungsausfall bestehen. Ein Mitverschulden des Geschädigten kann die Haftung mindern.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_823_1",
+        "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
+        "score": 0.86
+      },
+      {
+        "source_id": "olg_muenchen_7_u_234_20",
+        "text": "Bei einem Verkehrsunfall haftet der Schädiger nach § 823 BGB auf Schadensersatz. Dazu gehört der Ersatz des Fahrzeugschadens, der Nutzungsausfallentschädigung und gegebenenfalls eines Schmerzensgeldes.",
+        "score": 0.91
+      }
+    ],
+    "expected_behavior": "Should verify - synthesizes multiple sources correctly",
+    "challenge": "Combining information from statute and case law"
+  },
+  {
+    "id": "edge_009_exception_case",
+    "scenario": "exception_to_rule",
+    "query": "Gibt es Ausnahmen vom Widerrufsrecht bei Online-Käufen?",
+    "generated_answer": "Ja, es gibt Ausnahmen vom Widerrufsrecht. Bei verderblichen Waren, versiegelten Waren die aus Hygienegründen nicht zurückgegeben werden können, oder bei individuell angefertigten Produkten besteht kein Widerrufsrecht. Auch bei Downloads und digitalen Inhalten, deren Ausführung bereits begonnen hat, entfällt das Widerrufsrecht.",
+    "retrieved_snippets": [
+      {
+        "source_id": "olg_frankfurt_6_u_123_19",
+        "text": "Bei Verträgen, die außerhalb von Geschäftsräumen geschlossen werden, steht dem Verbraucher nach § 312g BGB ein Widerrufsrecht zu.",
+        "score": 0.58
+      }
+    ],
+    "expected_behavior": "Should flag as review - answer likely correct but not explicitly in sources",
+    "challenge": "Exceptions not covered in retrieved sources"
+  },
+  {
+    "id": "edge_010_temporal_ambiguity",
+    "scenario": "time_sensitive_info",
+    "query": "Wie lange muss ich Geschäftsunterlagen aufbewahren?",
+    "generated_answer": "Nach § 238 HGB und den steuerrechtlichen Vorschriften müssen Geschäftsunterlagen in der Regel 10 Jahre aufbewahrt werden. Die Frist beginnt mit dem Schluss des Kalenderjahres, in dem die letzte Eintragung erfolgte. Für bestimmte Unterlagen gelten kürzere Fristen von 6 Jahren.",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_238",
+        "text": "Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen.",
+        "score": 0.61
+      }
+    ],
+    "expected_behavior": "Should flag as review - retention period not in source",
+    "challenge": "Specific detail (10 years) not in retrieved text"
+  },
+  {
+    "id": "edge_011_comparative_statement",
+    "scenario": "comparison",
+    "query": "Was ist der Unterschied zwischen OHG und KG?",
+    "generated_answer": "Bei der OHG nach § 105 HGB haften alle Gesellschafter unbeschränkt. Bei der KG nach § 161 HGB gibt es hingegen Kommanditisten mit beschränkter Haftung und persönlich haftende Gesellschafter. Dies ist der wesentliche Unterschied zwischen den beiden Gesellschaftsformen.",
+    "retrieved_snippets": [
+      {
+        "source_id": "hgb_105",
+        "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine offene Handelsgesellschaft, wenn bei keinem der Gesellschafter die Haftung gegenüber den Gesellschaftsgläubigern beschränkt ist.",
+        "score": 0.89
+      },
+      {
+        "source_id": "hgb_161",
+        "text": "Eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes unter gemeinschaftlicher Firma gerichtet ist, ist eine Kommanditgesellschaft, wenn bei einem oder bei einigen von den Gesellschaftern die Haftung gegenüber den Gesellschaftsgläubigern auf den Betrag einer bestimmten Vermögenseinlage beschränkt ist (Kommanditisten), während bei dem anderen Teil der Gesellschafter eine Beschränkung der Haftung nicht stattfindet (persönlich haftende Gesellschafter).",
+        "score": 0.92
+      }
+    ],
+    "expected_behavior": "Should verify - accurate comparison from both sources",
+    "challenge": "Requires synthesizing comparison from separate sources"
+  },
+  {
+    "id": "edge_012_conditional_logic",
+    "scenario": "if_then_statement",
+    "query": "Was passiert, wenn ich die Miete nicht zahle?",
+    "generated_answer": "Wenn Sie die Miete nicht zahlen, kann der Vermieter zunächst eine Abmahnung aussprechen. Bei Zahlungsverzug von mindestens zwei Monatsmieten kann er fristlos kündigen. Zusätzlich können Mahnkosten und Verzugszinsen anfallen. Bei geringfügigem Verzug ist eine fristlose Kündigung nicht möglich.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren.",
+        "score": 0.42
+      }
+    ],
+    "expected_behavior": "Should flag as low confidence - consequences not in sources",
+    "challenge": "Procedural consequences not covered in retrieved text"
+  },
+  {
+    "id": "edge_013_numeric_precision",
+    "scenario": "specific_numbers",
+    "query": "Wie hoch ist die Verjährungsfrist für Gewährleistungsansprüche?",
+    "generated_answer": "Die Verjährungsfrist für Gewährleistungsansprüche beträgt bei beweglichen Sachen grundsätzlich zwei Jahre ab Ablieferung der Ware. Bei Bauwerken beträgt sie fünf Jahre. Die Frist kann vertraglich nicht zum Nachteil des Verbrauchers verkürzt werden.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_433",
+        "text": "Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen.",
+        "score": 0.56
+      }
+    ],
+    "expected_behavior": "Should flag as review - specific timeframes not in sources",
+    "challenge": "Precise numeric values not explicitly stated"
+  },
+  {
+    "id": "edge_014_jurisdictional_limit",
+    "scenario": "scope_limitation",
+    "query": "Gilt das deutsche Mietrecht auch für Gewerbeimmobilien?",
+    "generated_answer": "Das BGB-Mietrecht gilt grundsätzlich auch für Gewerbeimmobilien. Allerdings sind viele zwingende Schutzvorschriften für Wohnraum auf Gewerberaummiete nicht anwendbar. Die Vertragsparteien haben bei Gewerbemieten mehr Gestaltungsfreiheit.",
+    "retrieved_snippets": [
+      {
+        "source_id": "bgb_535",
+        "text": "Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren.",
+        "score": 0.71
+      }
+    ],
+    "expected_behavior": "Should verify with medium confidence - general principle supported",
+    "challenge": "Scope distinction not explicitly in sources"
+  },
+  {
+    "id": "edge_015_mixed_confidence",
+    "scenario": "partially_hallucinated",
+    "query": "Welche Strafen drohen bei Diebstahl?",
+    "generated_answer": "Nach § 242 StGB wird Diebstahl mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft. Bei besonders schwerem Diebstahl kann die Strafe bis zu zehn Jahren betragen. Bei geringwertigen Sachen unter 25 Euro erfolgt oft eine Einstellung des Verfahrens. Wiederholungstäter müssen immer mit Freiheitsstrafe rechnen.",
+    "retrieved_snippets": [
+      {
+        "source_id": "stgb_242",
+        "text": "Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+        "score": 0.87
+      }
+    ],
+    "expected_behavior": "Should flag last two sentences as unsupported",
+    "challenge": "Mix of verified and hallucinated claims in same answer"
+  }
+]
