@@ -271,28 +271,25 @@ uvicorn main:app --host 0.0.0.0 --port 8888
 
 **Cost**: $2-10 per update (Modal GPU usage)
 
-See [docs/UPDATE_GUIDE.md](docs/UPDATE_GUIDE.md) for details.
+Detailed update procedures will be documented in Phase 9.
 
 ## Project Status
 
 - [x] Phase 1: Repository setup ✅
-- [ ] Phase 2: Service migration
-- [ ] Phase 3: Shared embedder service
-- [ ] Phase 4: Orchestrator API
-- [ ] Phase 5: Docker Compose setup
-- [ ] Phase 6: Integration tests
-- [ ] Phase 7: Documentation
-- [ ] Phase 8: Production deployment
+- [x] Phase 2: Service migration ✅
+- [x] Phase 3: Shared embedder service ✅
+- [x] Phase 4: Orchestrator API ✅
+- [x] Phase 5: Docker Compose setup ✅
+- [x] Phase 6: Smoke tests ✅
+- [ ] Phase 7: Integration tests (E2E)
+- [ ] Phase 8: Production deployment testing
+- [ ] Phase 9: Documentation (ARCHITECTURE.md, API.md, etc.)
 
-**Current Status**: Foundation created, ready for service migration
+**Current Status**: Core services merged and tested (smoke tests passing). Ready for integration testing and deployment verification.
 
 ## Documentation
 
-- [ARCHITECTURE.md](docs/ARCHITECTURE.md) - System design and architecture
-- [API.md](docs/API.md) - Complete API reference
-- [DEPLOYMENT.md](docs/DEPLOYMENT.md) - Deployment guide
-- [UPDATE_GUIDE.md](docs/UPDATE_GUIDE.md) - Corpus update procedures
-- [MIGRATION_GUIDE.md](docs/MIGRATION_GUIDE.md) - How we merged the repositories
+Full documentation (ARCHITECTURE.md, API.md, DEPLOYMENT.md, UPDATE_GUIDE.md) will be added in Phase 9.
 
 ## Contributing
 
