@@ -1,33 +1,40 @@
-# JuraGPT Unified - Production-Ready Legal Q&A System
+# JuraGPT Unified - Production-Ready Legal AI System
 
-**Complete legal question-answering system with built-in hallucination detection**
+**ChatGPT for Lawyers: Complete legal AI platform with document processing, knowledge retrieval, and hallucination detection**
 
-Combines **juragpt-rag** (325K+ vector retrieval) with **juragpt-auditor** (sentence-level verification) into a unified, production-ready microservices architecture.
+Integrates **juragpt-backend** (secure chatbot), **juragpt-rag** (325K+ vector retrieval), and **juragpt-auditor** (sentence-level verification) into a unified, production-ready microservices architecture.
 
 ## Overview
 
-This system provides end-to-end verified legal answers by:
-1. **Retrieving** relevant legal sources from 325,456 vectors (German laws + EUR-Lex)
-2. **Generating** answers using an LLM (GPT-4, Claude, etc.)
-3. **Verifying** answers against sources with confidence scoring
-4. **Returning** verified answers with trust labels
+JuraGPT is an AI-powered legal assistant system that provides:
+
+1. **Document Processing** - Secure chatbot with file reading, large context windows, and GDPR-compliant PII protection
+2. **Knowledge Enrichment** - Semantic retrieval from 325,456 legal document vectors (German Federal Laws + EUR-Lex)
+3. **Answer Generation** - LLM-powered responses using Gemini 2.5 Pro with legal context
+4. **Hallucination Protection** - Sentence-level verification with multi-factor confidence scoring
+5. **Verified Responses** - Trust-labeled answers with source citations and confidence metrics
 
 ## Architecture
 
 ```
 juragpt-unified/
 ├── services/
-│   ├── retrieval/          # RAG service (Qdrant + embeddings)
-│   ├── verification/       # Hallucination detection
-│   ├── embedder/           # Shared E5-large model
-│   └── orchestrator/       # API gateway
+│   ├── document/           # Chatbot service (FastAPI, Gemini 2.5 Pro, PII protection)
+│   ├── retrieval/          # RAG service (Qdrant + 325K vectors)
+│   ├── verification/       # Hallucination detection (sentence-level)
+│   ├── embedder/           # Shared multilingual-e5-large model
+│   └── orchestrator/       # API gateway (coordinates all services)
+├── tests/
+│   ├── document/           # Document service tests (21 files)
+│   ├── integration/        # Cross-service tests
+│   └── e2e/                # End-to-end workflows
 ├── shared/
 │   ├── models/             # Pydantic schemas
 │   ├── config/             # Unified settings
 │   └── utils/              # Common utilities
 ├── monitoring/
-│   ├── prometheus/         # Metrics
-│   └── grafana/            # Dashboards
+│   ├── prometheus/         # Metrics collection
+│   └── grafana/            # Performance dashboards
 └── docker-compose.yml      # Full stack deployment
 ```
 
@@ -45,12 +52,25 @@ juragpt-unified/
 
 ## Features
 
+### From juragpt-backend (Document Service)
+- ✅ Secure chatbot with large context windows (Gemini 2.5 Pro)
+- ✅ GDPR-compliant PII protection (Presidio + German NLP)
+- ✅ Multi-format document processing (PDF, DOCX, images)
+- ✅ GPU-accelerated OCR pipeline (Modal + docTR + TrOCR)
+- ✅ Hierarchical RAG for legal documents (§, Absätze, Ziffern)
+- ✅ Multi-tenancy with Row-Level Security (RLS)
+- ✅ Private document indexing (Supabase pgvector)
+- ✅ JWT authentication + rate limiting + quota tracking
+- ✅ Prometheus metrics + Sentry error tracking
+- ✅ 21 comprehensive tests (86% pass rate)
+
 ### From juragpt-rag (Retrieval Service)
 - ✅ 325,456 vectors indexed (274,413 German laws + 51,491 EUR-Lex)
 - ✅ GPU-accelerated embedding generation (Modal)
 - ✅ Resumable ETL pipelines with checkpointing
 - ✅ Incremental daily updates
 - ✅ FastAPI retrieval endpoint
+- ✅ Hierarchical parent-child chunk relationships
 
 ### From juragpt-auditor (Verification Service)
 - ✅ Sentence-level semantic verification
@@ -62,12 +82,12 @@ juragpt-unified/
 - ✅ 240+ comprehensive tests
 
 ### New in Unified System
-- ✅ Single API for query → retrieve → verify workflow
+- ✅ Complete legal AI pipeline: upload → process → enrich → generate → verify
 - ✅ Shared embedding model (reduce memory footprint)
-- ✅ Unified authentication
-- ✅ Comprehensive monitoring stack
+- ✅ Unified authentication across all services
+- ✅ Comprehensive monitoring stack (Prometheus + Grafana + Sentry)
 - ✅ Docker Compose deployment
-- ✅ Integration tests
+- ✅ Integration tests across services
 
 ## Quick Start
 
@@ -306,7 +326,8 @@ MIT License - See [LICENSE](LICENSE)
 
 ## Acknowledgments
 
-This project combines:
+This project combines three foundational systems:
+- **juragpt-backend**: Secure chatbot with PII protection and OCR (integrated as Document Service)
 - **juragpt-rag**: Legal corpus ingestion and retrieval (https://github.com/federicodeponte/juragpt-rag)
 - **juragpt-auditor**: Hallucination detection for legal AI (https://github.com/federicodeponte/juragpt-auditor)
 
